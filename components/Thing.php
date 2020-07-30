@@ -7,6 +7,16 @@ use October\Rain\Support\Str;
 
 class Thing extends ComponentBase
 {
+    public $dropdownBoolean = [
+        'type' => 'dropdown',
+        'default' => 'boolean::no-data',
+        'options' => [
+            'https://schema.org/True' => 'magiczne.jsonld::lang.global.yes',
+            'https://schema.org/False' => 'magiczne.jsonld::lang.global.no',
+            'boolean::no-data' => 'magiczne.jsonld::lang.global.no-data'
+        ]
+    ];
+
     public function componentDetails()
     {
         return [
@@ -174,6 +184,6 @@ class Thing extends ComponentBase
         }
 
         // In other case just return property value
-        return $value;
+        return $value === 'boolean::no-data' ? null : $value;
     }
 }

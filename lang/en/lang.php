@@ -5,6 +5,11 @@ return [
         'name' => 'JSON-LD Components',
         'description' => 'Use components to add JSON-LD data to your page.'
     ],
+    'global' => [
+        'yes' => 'Yes',
+        'no' => 'No',
+        'no-data' => 'No data'
+    ],
     'properties' => [
         'actor' => 'Actor',
         'additionalType' => 'Additional type',
