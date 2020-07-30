@@ -5,6 +5,7 @@ use Magiczne\JsonLd\Components\AudioObject;
 use Magiczne\JsonLd\Components\Barcode;
 use Magiczne\JsonLd\Components\CreativeWork;
 use Magiczne\JsonLd\Components\DataDownload;
+use Magiczne\JsonLd\Components\EntryPoint;
 use Magiczne\JsonLd\Components\Event;
 use Magiczne\JsonLd\Components\ImageObject;
 use Magiczne\JsonLd\Components\MediaObject;
@@ -43,6 +44,7 @@ class Plugin extends PluginBase
             MediaObject::class => 'MediaObject',
 
             // Level 2 - Intangible
+            EntryPoint::class => 'EntryPoint',
             StructuredValue::class => 'StructuredValue',
 
             // Level 3 - Media Object
