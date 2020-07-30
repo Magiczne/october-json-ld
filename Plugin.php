@@ -2,6 +2,7 @@
 
 use Magiczne\JsonLd\Components\Action;
 use Magiczne\JsonLd\Components\AudioObject;
+use Magiczne\JsonLd\Components\Barcode;
 use Magiczne\JsonLd\Components\CreativeWork;
 use Magiczne\JsonLd\Components\DataDownload;
 use Magiczne\JsonLd\Components\Event;
@@ -39,7 +40,10 @@ class Plugin extends PluginBase
             // Level 3 - Media Object
             AudioObject::class => 'AudioObject',
             DataDownload::class => 'DataDownload',
-            ImageObject::class => 'ImageObject'
+            ImageObject::class => 'ImageObject',
+
+            // Level 4 - ImageObject
+            Barcode::class => 'Barcode'
         ];
     }
 }
