@@ -14,6 +14,7 @@ use Magiczne\JsonLd\Components\Person;
 use Magiczne\JsonLd\Components\Place;
 use Magiczne\JsonLd\Components\Product;
 use Magiczne\JsonLd\Components\Thing;
+use Magiczne\JsonLd\Components\VideoObject;
 use System\Classes\PluginBase;
 
 class Plugin extends PluginBase
@@ -41,6 +42,8 @@ class Plugin extends PluginBase
             AudioObject::class => 'AudioObject',
             DataDownload::class => 'DataDownload',
             ImageObject::class => 'ImageObject',
+
+            VideoObject::class => 'VideoObject',
 
             // Level 4 - ImageObject
             Barcode::class => 'Barcode'

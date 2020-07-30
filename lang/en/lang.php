@@ -190,6 +190,7 @@ return [
         'mentions' => 'Mentions',
         'model' => 'Model',
         'mpn' => 'MPN',
+        'musicBy' => 'Music by',
 
         'naics' => 'NAICS Code',
         'name' => 'Name',
@@ -278,6 +279,8 @@ return [
         'vatID' => 'The Value-added Tax ID',
         'version' => 'Version',
         'video' => 'Video',
+        'videoFrameSize' => 'Video frame size',
+        'videoQuality' => 'Video quality',
 
         'weight' => 'Weight',
         'width' => 'Width',
