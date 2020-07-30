@@ -3,6 +3,7 @@
 use Magiczne\JsonLd\Components\Action;
 use Magiczne\JsonLd\Components\CreativeWork;
 use Magiczne\JsonLd\Components\Event;
+use Magiczne\JsonLd\Components\MediaObject;
 use Magiczne\JsonLd\Components\MedicalEntity;
 use Magiczne\JsonLd\Components\Organization;
 use Magiczne\JsonLd\Components\Person;
@@ -27,7 +28,10 @@ class Plugin extends PluginBase
             Organization::class => 'Organization',
             Person::class => 'Person',
             Place::class => 'Place',
-            Product::class => 'Product'
+            Product::class => 'Product',
+
+            // Level 2 - Creative Work
+            MediaObject::class => 'MediaObject'
         ];
     }
 }
