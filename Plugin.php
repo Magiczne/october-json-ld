@@ -15,6 +15,7 @@ use Magiczne\JsonLd\Components\Person;
 use Magiczne\JsonLd\Components\Place;
 use Magiczne\JsonLd\Components\Product;
 use Magiczne\JsonLd\Components\PropertyValue;
+use Magiczne\JsonLd\Components\QuantitativeValue;
 use Magiczne\JsonLd\Components\StructuredValue;
 use Magiczne\JsonLd\Components\Thing;
 use Magiczne\JsonLd\Components\VideoObject;
@@ -53,6 +54,7 @@ class Plugin extends PluginBase
 
             // Level 3 - Structured Value
             PropertyValue::class => 'PropertyValue',
+            QuantitativeValue::class => 'QuantitativeValue',
 
             // Level 4 - ImageObject
             Barcode::class => 'Barcode'
