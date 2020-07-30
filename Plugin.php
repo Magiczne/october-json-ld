@@ -9,6 +9,7 @@ use Magiczne\JsonLd\Components\Event;
 use Magiczne\JsonLd\Components\ImageObject;
 use Magiczne\JsonLd\Components\MediaObject;
 use Magiczne\JsonLd\Components\MedicalEntity;
+use Magiczne\JsonLd\Components\MusicVideoObject;
 use Magiczne\JsonLd\Components\Organization;
 use Magiczne\JsonLd\Components\Person;
 use Magiczne\JsonLd\Components\Place;
@@ -42,7 +43,7 @@ class Plugin extends PluginBase
             AudioObject::class => 'AudioObject',
             DataDownload::class => 'DataDownload',
             ImageObject::class => 'ImageObject',
-
+            MusicVideoObject::class => 'MusicVideoObject',
             VideoObject::class => 'VideoObject',
 
             // Level 4 - ImageObject
