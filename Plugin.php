@@ -1,6 +1,7 @@
 <?php namespace Magiczne\JsonLd;
 
 use Magiczne\JsonLd\Components\Action;
+use Magiczne\JsonLd\Components\AudioObject;
 use Magiczne\JsonLd\Components\CreativeWork;
 use Magiczne\JsonLd\Components\Event;
 use Magiczne\JsonLd\Components\MediaObject;
@@ -31,7 +32,10 @@ class Plugin extends PluginBase
             Product::class => 'Product',
 
             // Level 2 - Creative Work
-            MediaObject::class => 'MediaObject'
+            MediaObject::class => 'MediaObject',
+
+            // Level 3 - Media Object
+            AudioObject::class => 'AudioObject',
         ];
     }
 }

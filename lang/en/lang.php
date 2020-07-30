@@ -49,6 +49,7 @@ return [
         'branchCode' => 'Branch code',
         'brand' => 'Brand',
 
+        'caption' => 'Caption',
         'category' => 'Category',
         'character' => 'Character',
         'children' => 'Children',
@@ -264,6 +265,7 @@ return [
         'text' => 'Text',
         'thumbnailUrl' => 'Thumbnail URL',
         'timeRequired' => 'Time required',
+        'transcript' => 'Transcript',
         'translator' => 'Translator',
         'typicalAgeRange' => 'Typical age range',
 
