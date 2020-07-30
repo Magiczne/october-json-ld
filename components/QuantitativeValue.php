@@ -20,6 +20,6 @@ class QuantitativeValue extends StructuredValue
             'unitText',
             'value',
             'valueReference'
-        ], 'PropertyValue'));
+        ], 'QuantitativeValue'));
     }
 }
