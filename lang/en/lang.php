@@ -11,12 +11,14 @@ return [
         'no-data' => 'No data'
     ],
     'properties' => [
+        'actionStatus' => 'Action status',
         'actor' => 'Actor',
         'additionalName' => 'Additional name',
         'additionalProperty' => 'Additional property',
         'additionalType' => 'Additional type',
         'address' => 'Address',
         'affiliation' => 'Affiliation',
+        'agent' => 'Agent',
         'aggregateRating' => 'Aggregate rating',
         'alternateName' => 'Alternate name',
         'alumni' => 'Alumni',
@@ -51,6 +53,8 @@ return [
 
         'email' => 'Email',
         'employee' => 'Employee',
+        'endTime' => 'End time',
+        'error' => 'Error',
         'event' => 'Event',
 
         'familyName' => 'Family name',
@@ -92,6 +96,7 @@ return [
 
         'identifier' => 'Identifier',
         'image' => 'Image',
+        'instrument' => 'Instrument',
         'interactionStatistic' => 'Interaction statistic',
         'isAccessibleForFree' => 'Is accessible for free',
         'isAccessoryOrSparePartFor' => 'Is accessory or spare part for',
@@ -129,12 +134,14 @@ return [
         'netWorth' => 'Net worth',
         'numberOfEmployees' => 'Number of employees',
 
+        'object' => 'Object',
         'offers' => 'Offers',
         'openingHoursSpecification' => 'Opening hours specification',
         'owns' => 'Owns',
 
         'parent' => 'Parent',
         'parentOrganization' => 'Parent organization',
+        'participant' => 'Participant',
         'performerIn' => 'Performer in',
         'photo' => 'Photo',
         'potentialAction' => 'Potential action',
@@ -148,6 +155,7 @@ return [
         'relatedTo' => 'Related to',
         'releaseDate' => 'Release date',
         'relevantSpecialty' => 'Relevant specialty',
+        'result' => 'Result',
         'review' => 'Review',
 
         'sameAs' => 'Same as',
@@ -159,10 +167,12 @@ return [
         'specialOpeningHoursSpecification' => 'Special opening hours specification',
         'sponsor' => 'Sponsor',
         'spouse' => 'Spouse',
+        'startTime' => 'Start time',
         'study' => 'Study',
         'subOrganization' => 'Sub organization',
         'subjectOf' => 'Subject of',
 
+        'target' => 'Target',
         'taxID' => 'The Tax / Fiscal ID',
         'telephone' => 'Telephone',
 
