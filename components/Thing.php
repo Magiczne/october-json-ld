@@ -81,29 +81,22 @@ class Thing extends ComponentBase
 
     /**
      * Return component data as an array.
-     * Remember to call array_filter to remove empty and null values
      *
      * @return array
      * @throws Exception
      */
     public function toArray()
     {
+        $properties = collect($this->defineProperties())->mapWithKeys(function ($item, $key) {
+            return [
+                $key => $this->getValueOf($key)
+            ];
+        })->toArray();
+
         // array_filter here to remove empty and null values
-        return array_filter([
-            '@type' => $this->name,
-            'additionalType' => $this->getValueOf('additionalType'),
-            'alternateName' => $this->getValueOf('alternateName'),
-            'description' => $this->getValueOf('description'),
-            'disambiguatingDescription' => $this->getValueOf('disambiguatingDescription'),
-            'identifier' => $this->getValueOf('identifier'),
-            'image' => $this->getValueOf('image'),
-            'mainEntityOfPage' => $this->getValueOf('mainEntityOfPage'),
-            'name' => $this->getValueOf('name'),
-            'potentialAction' => $this->getValueOf('potentialAction'),
-            'sameAs' => $this->getValueOf('sameAs'),
-            'subjectOf' => $this->getValueOf('subjectOf'),
-            'url' => $this->getValueOf('url')
-        ]);
+        return array_filter(array_merge([
+            '@type' => $this->name
+        ], $properties));
     }
 
     /**
@@ -149,10 +142,6 @@ class Thing extends ComponentBase
                     throw new Exception('Component is not a valid JSON-LD component');
                 }
 
-                if (!method_exists($component, 'toArray')) {
-                    throw new Exception('JSON-LD component should implement method toArray method');
-                }
-
                 return $component->toArray();
             }
 
@@ -170,10 +159,6 @@ class Thing extends ComponentBase
 
                 if (!$component instanceof Thing) {
                     throw new Exception('Component is not a valid JSON-LD component');
-                }
-
-                if (!method_exists($component, 'toArray')) {
-                    throw new Exception('JSON-LD component should implement method toArray method');
                 }
 
                 return $component->toArray();
