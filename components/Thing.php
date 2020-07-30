@@ -105,9 +105,9 @@ class Thing extends ComponentBase
      */
     public function toJson()
     {
-        $jsonArray = array_merge($this->toArray(), [
+        $jsonArray = array_merge([
             '@context' => 'https://schema.org'
-        ]);
+        ], $this->toArray());
 
         return json_encode($jsonArray, JSON_PRETTY_PRINT);
     }
