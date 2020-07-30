@@ -39,6 +39,7 @@ return [
         'affiliation' => 'Affiliation',
         'agent' => 'Agent',
         'aggregateRating' => 'Aggregate rating',
+        'alignmentType' => 'Alignment type',
         'alternateName' => 'Alternate name',
         'alternativeHeadline' => 'Alternative headline',
         'alumni' => 'Alumni',
@@ -101,6 +102,7 @@ return [
 
         'editor' => 'Editor',
         'educationalAlignment' => 'Educational alignment',
+        'educationalFramework' => 'Educational framework',
         'educationalUse' => 'Educational use',
         'embedUrl' => 'Embed URL',
         'email' => 'Email',
@@ -277,6 +279,9 @@ return [
         'superEvent' => 'Super event',
 
         'target' => 'Target',
+        'targetDescription' => 'Target description',
+        'targetName' => 'Target name',
+        'targetUrl' => 'Target url',
         'taxID' => 'The Tax / Fiscal ID',
         'telephone' => 'Telephone',
         'temporal' => 'Temporal',

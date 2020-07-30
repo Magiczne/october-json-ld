@@ -1,6 +1,7 @@
 <?php namespace Magiczne\JsonLd;
 
 use Magiczne\JsonLd\Components\Action;
+use Magiczne\JsonLd\Components\AlignmentObject;
 use Magiczne\JsonLd\Components\AudioObject;
 use Magiczne\JsonLd\Components\Barcode;
 use Magiczne\JsonLd\Components\CreativeWork;
@@ -44,6 +45,7 @@ class Plugin extends PluginBase
             MediaObject::class => 'MediaObject',
 
             // Level 2 - Intangible
+            AlignmentObject::class => 'AlignmentObject',
             EntryPoint::class => 'EntryPoint',
             StructuredValue::class => 'StructuredValue',
 
