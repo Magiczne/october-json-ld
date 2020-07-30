@@ -1,6 +1,7 @@
 <?php namespace Magiczne\JsonLd;
 
 use Magiczne\JsonLd\Components\Action;
+use Magiczne\JsonLd\Components\CreativeWork;
 use Magiczne\JsonLd\Components\MedicalEntity;
 use Magiczne\JsonLd\Components\Organization;
 use Magiczne\JsonLd\Components\Person;
@@ -19,6 +20,7 @@ class Plugin extends PluginBase
 
             // Level 1
             Action::class => 'Action',
+            CreativeWork::class => 'CreativeWork',
             MedicalEntity::class => 'MedicalEntity',
             Organization::class => 'Organization',
             Person::class => 'Person',
