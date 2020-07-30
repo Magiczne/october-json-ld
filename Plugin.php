@@ -14,6 +14,8 @@ use Magiczne\JsonLd\Components\Organization;
 use Magiczne\JsonLd\Components\Person;
 use Magiczne\JsonLd\Components\Place;
 use Magiczne\JsonLd\Components\Product;
+use Magiczne\JsonLd\Components\PropertyValue;
+use Magiczne\JsonLd\Components\StructuredValue;
 use Magiczne\JsonLd\Components\Thing;
 use Magiczne\JsonLd\Components\VideoObject;
 use System\Classes\PluginBase;
@@ -39,12 +41,18 @@ class Plugin extends PluginBase
             // Level 2 - Creative Work
             MediaObject::class => 'MediaObject',
 
+            // Level 2 - Intangible
+            StructuredValue::class => 'StructuredValue',
+
             // Level 3 - Media Object
             AudioObject::class => 'AudioObject',
             DataDownload::class => 'DataDownload',
             ImageObject::class => 'ImageObject',
             MusicVideoObject::class => 'MusicVideoObject',
             VideoObject::class => 'VideoObject',
+
+            // Level 3 - Structured Value
+            PropertyValue::class => 'PropertyValue',
 
             // Level 4 - ImageObject
             Barcode::class => 'Barcode'
