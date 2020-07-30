@@ -1,6 +1,6 @@
 <?php namespace Magiczne\JsonLd\Components;
 
-class PropertyValue extends Thing
+class PropertyValue extends StructuredValue
 {
     public function componentDetails()
     {
