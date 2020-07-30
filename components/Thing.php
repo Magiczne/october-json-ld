@@ -10,8 +10,8 @@ class Thing extends ComponentBase
     public function componentDetails()
     {
         return [
-            'name' => $this->name,
-            'description' => "https://schema.org/{$this->name}"
+            'name' => 'Thing',
+            'description' => 'https://schema.org/Thing'
         ];
     }
 
