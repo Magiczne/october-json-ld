@@ -16,6 +16,13 @@ return [
             'completed' => 'Completed',
             'failed' => 'Failed',
             'potential' => 'Potential'
+        ],
+        'eventStatusType' => [
+            'cancelled' => 'Cancelled',
+            'movedOnline' => 'Moved online',
+            'postponed' => 'Postponed',
+            'rescheduled' => 'Rescheduled',
+            'scheduled' => 'Scheduled'
         ]
     ],
     'properties' => [

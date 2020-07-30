@@ -1,5 +1,7 @@
 <?php namespace Magiczne\JsonLd\Components;
 
+use Magiczne\JsonLd\Classes\Enumerations\StatusEnumerations;
+
 class Event extends Thing
 {
     public function componentDetails()
@@ -24,7 +26,7 @@ class Event extends Thing
             'doorTime',
             'duration',
             'endDate',
-            'eventStatus',
+            'eventStatus' => StatusEnumerations::$eventStatusType,
             'funder',
             'inLanguage',
             'isAccessibleForFree',
