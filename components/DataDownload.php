@@ -9,11 +9,4 @@ class DataDownload extends MediaObject
             'description' => 'https://schema.org/DataDownload'
         ];
     }
-
-    public function defineProperties()
-    {
-        return array_merge(parent::defineProperties(), $this->generateProperties([
-            // Currently no official properties
-        ], 'DataDownload'));
-    }
 }
