@@ -103,6 +103,7 @@ return [
         'event' => 'Event',
         'eventStatus' => 'Event status',
         'exampleOfWork' => 'Example of work',
+        'exifData' => 'EXIF data',
         'expires' => 'Expires',
 
         'familyName' => 'Family name',
@@ -232,6 +233,7 @@ return [
         'releasedEvent' => 'Released event',
         'relevantSpecialty' => 'Relevant specialty',
         'remainingAttendeeCapacity' => 'Remaining attendee capacity',
+        'representativeOfPage' => 'Representative of page',
         'requiresSubscription' => 'Required subscription',
         'result' => 'Result',
         'review' => 'Review',
@@ -263,6 +265,7 @@ return [
         'temporal' => 'Temporal',
         'temporalCoverage' => 'Temporal coverage',
         'text' => 'Text',
+        'thumbnail' => 'Thumbnail',
         'thumbnailUrl' => 'Thumbnail URL',
         'timeRequired' => 'Time required',
         'transcript' => 'Transcript',
