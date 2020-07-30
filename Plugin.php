@@ -3,6 +3,7 @@
 use Magiczne\JsonLd\Components\Action;
 use Magiczne\JsonLd\Components\AudioObject;
 use Magiczne\JsonLd\Components\CreativeWork;
+use Magiczne\JsonLd\Components\DataDownload;
 use Magiczne\JsonLd\Components\Event;
 use Magiczne\JsonLd\Components\MediaObject;
 use Magiczne\JsonLd\Components\MedicalEntity;
@@ -36,6 +37,7 @@ class Plugin extends PluginBase
 
             // Level 3 - Media Object
             AudioObject::class => 'AudioObject',
+            DataDownload::class => 'DataDownload'
         ];
     }
 }
