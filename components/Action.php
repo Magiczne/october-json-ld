@@ -1,5 +1,7 @@
 <?php namespace Magiczne\JsonLd\Components;
 
+use Magiczne\JsonLd\Classes\Enumerations\StatusEnumerations;
+
 class Action extends Thing
 {
     public function componentDetails()
@@ -13,7 +15,7 @@ class Action extends Thing
     public function defineProperties()
     {
         return array_merge(parent::defineProperties(), $this->generateProperties([
-            'actionStatus',
+            'actionStatus' => StatusEnumerations::$actionStatusType,
             'agent',
             'endTime',
             'error',

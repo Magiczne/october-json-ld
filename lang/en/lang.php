@@ -8,7 +8,15 @@ return [
     'global' => [
         'yes' => 'Yes',
         'no' => 'No',
-        'no-data' => 'No data'
+        'noData' => 'No data'
+    ],
+    'enumerations' => [
+        'actionStatusType' => [
+            'active' => 'Active',
+            'completed' => 'Completed',
+            'failed' => 'Failed',
+            'potential' => 'Potential'
+        ]
     ],
     'properties' => [
         'about' => 'About',

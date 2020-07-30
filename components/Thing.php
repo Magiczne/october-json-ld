@@ -13,7 +13,7 @@ class Thing extends ComponentBase
         'options' => [
             'https://schema.org/True' => 'magiczne.jsonld::lang.global.yes',
             'https://schema.org/False' => 'magiczne.jsonld::lang.global.no',
-            'boolean::no-data' => 'magiczne.jsonld::lang.global.no-data'
+            'boolean::no-data' => 'magiczne.jsonld::lang.global.noData'
         ]
     ];
 
