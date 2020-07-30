@@ -27,56 +27,20 @@ class Thing extends ComponentBase
 
     public function defineProperties()
     {
-        return [
-            'additionalType' => [
-                'title' => 'magiczne.jsonld::lang.properties.additionalType',
-                'group' => 'Thing'
-            ],
-            'alternateName' => [
-                'title' => 'magiczne.jsonld::lang.properties.alternateName',
-                'group' => 'Thing'
-            ],
-            'description' => [
-                'title' => 'magiczne.jsonld::lang.properties.description',
-                'group' => 'Thing'
-            ],
-            'disambiguatingDescription' => [
-                'title' => 'magiczne.jsonld::lang.properties.disambiguatingDescription',
-                'group' => 'Thing'
-            ],
-            'identifier' => [
-                'title' => 'magiczne.jsonld::lang.properties.identifier',
-                'group' => 'Thing'
-            ],
-            'image' => [
-                'title' => 'magiczne.jsonld::lang.properties.image',
-                'group' => 'Thing'
-            ],
-            'mainEntityOfPage' => [
-                'title' => 'magiczne.jsonld::lang.properties.mainEntityOfPage',
-                'group' => 'Thing'
-            ],
-            'name' => [
-                'title' => 'magiczne.jsonld::lang.properties.name',
-                'group' => 'Thing'
-            ],
-            'potentialAction' => [
-                'title' => 'magiczne.jsonld::lang.properties.potentialAction',
-                'group' => 'Thing'
-            ],
-            'sameAs' => [
-                'title' => 'magiczne.jsonld::lang.properties.sameAs',
-                'group' => 'Thing'
-            ],
-            'subjectOf' => [
-                'title' => 'magiczne.jsonld::lang.properties.subjectOf',
-                'group' => 'Thing'
-            ],
-            'url' => [
-                'title' => 'magiczne.jsonld::lang.properties.url',
-                'group' => 'Thing'
-            ],
-        ];
+        return $this->generateProperties([
+            'additionalType',
+            'alternateName',
+            'description',
+            'disambiguatingDescription',
+            'identifier',
+            'image',
+            'mainEntityOfPage',
+            'name',
+            'potentialAction',
+            'sameAs',
+            'subjectOf',
+            'url'
+        ], 'Thing');
     }
 
     /**
@@ -113,6 +77,35 @@ class Thing extends ComponentBase
         ], $this->toArray());
 
         return json_encode($jsonArray, JSON_PRETTY_PRINT);
+    }
+
+    /**
+     * Generate properties data based on array keys.
+     * If array key is associated with value and value is an array data will be merged.
+     *
+     * @param array $properties
+     * @param string $group
+     * @return array
+     */
+    protected function generateProperties(array $properties, string $group)
+    {
+        return collect($properties)->mapWithKeys(function ($item, $key) use ($group) {
+            if (is_array($item)) {
+                $propertyData = array_merge([
+                    'title' => "magiczne.jsonld::lang.properties.{$key}",
+                    'group' => $group
+                ], $item);
+
+                return [ $key => $propertyData ];
+            } else {
+                $propertyData = [
+                    'title' => "magiczne.jsonld::lang.properties.{$item}",
+                    'group' => $group
+                ];
+
+                return [ $item => $propertyData ];
+            }
+        })->toArray();
     }
 
     /**
