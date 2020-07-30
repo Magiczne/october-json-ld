@@ -33,6 +33,7 @@ return [
 
         'category' => 'Category',
         'children' => 'Children',
+        'code' => 'Code',
         'colleague' => 'Colleague',
         'color' => 'Color',
         'contactPoint' => 'Contact point',
@@ -78,6 +79,7 @@ return [
         'gtin13' => 'GTIN-13',
         'gtin14' => 'GTIN-14',
         'gtin8' => 'GTIN-8',
+        'guideline' => 'Guideline',
 
         'hasMap' => 'Has map',
         'hasOccupation' => 'Has occupation',
@@ -104,6 +106,7 @@ return [
 
         'latitude' => 'Latitude',
         'legalName' => 'Legal name',
+        'legalStatus' => 'Legal status',
         'leiCode' => 'LEI code',
         'location' => 'Location',
         'logo' => 'Logo',
@@ -114,6 +117,7 @@ return [
         'manufacturer' => 'Manufacturer',
         'material' => 'Material',
         'maximumAttendeeCapacity' => 'Maximum attendee capacity',
+        'medicineSystem' => 'Medicine system',
         'member' => 'Member',
         'memberOf' => 'Member of',
         'model' => 'Model',
@@ -140,8 +144,10 @@ return [
         'publishingPrinciples' => 'Publishing principles',
         'purchaseDate' => 'Purchase date',
 
+        'recognizedAuthority' => 'Recognized authority',
         'relatedTo' => 'Related to',
         'releaseDate' => 'Release date',
+        'relevantSpecialty' => 'Relevant specialty',
         'review' => 'Review',
 
         'sameAs' => 'Same as',
@@ -153,6 +159,7 @@ return [
         'specialOpeningHoursSpecification' => 'Special opening hours specification',
         'sponsor' => 'Sponsor',
         'spouse' => 'Spouse',
+        'study' => 'Study',
         'subOrganization' => 'Sub organization',
         'subjectOf' => 'Subject of',
 
