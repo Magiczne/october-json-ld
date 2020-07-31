@@ -162,6 +162,10 @@ class Thing extends ComponentBase
         }
 
         // In other case just return property value
-        return $value === 'boolean::no-data' ? null : $value;
+        $emptyValues = [
+            'boolean::no-data', 'enum::no-data'
+        ];
+
+        return in_array($value, $emptyValues, true) ? null : $value;
     }
 }
