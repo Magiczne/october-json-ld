@@ -2,6 +2,21 @@
 
 class Enumerations
 {
+    /**
+     * https://schema.org/OfferItemCondition
+     */
+    public static $offerItemCondition = [
+        'type' => 'dropdown',
+        'default' => 'enum::no-data',
+        'options' => [
+            'https://schema.org/DamagedCondition' => 'magiczne.jsonld::lang.enumerations.offerItemCondition.damagedCondition',
+            'https://schema.org/NewCondition' => 'magiczne.jsonld::lang.enumerations.offerItemCondition.newCondition',
+            'https://schema.org/RefurbishedCondition' => 'magiczne.jsonld::lang.enumerations.offerItemCondition.refurbishedCondition',
+            'https://schema.org/UsedCondition' => 'magiczne.jsonld::lang.enumerations.offerItemCondition.usedCondition',
+            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+        ]
+    ];
+
     /*
      * https://schema.org/PhysicalActivityCategory
      */

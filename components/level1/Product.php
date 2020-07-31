@@ -1,5 +1,6 @@
 <?php namespace Magiczne\JsonLd\Components\Level1;
 
+use Magiczne\JsonLd\Classes\Enumerations\Enumerations;
 use Magiczne\JsonLd\Components\Thing;
 
 class Product extends Thing
@@ -33,7 +34,7 @@ class Product extends Thing
             'isRelatedTo',
             'isSimilarTo',
             'isVariantOf',
-            'itemCondition',
+            'itemCondition' => Enumerations::$offerItemCondition,
             'logo',
             'manufacturer',
             'material',

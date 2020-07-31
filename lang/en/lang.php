@@ -25,6 +25,12 @@ return [
             'rescheduled' => 'Rescheduled',
             'scheduled' => 'Scheduled'
         ],
+        'offerItemCondition' => [
+            'damagedCondition' => 'Damaged',
+            'newCondition' => 'New',
+            'refurbishedCondition' => 'Refurbished',
+            'usedCondition' => 'Used'
+        ],
         'physicalActivityCategory' => [
             'aerobicActivity' => 'Aerobic activity',
             'anaerobicActivity' => 'Anaerobic activity',
