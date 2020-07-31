@@ -8,7 +8,8 @@ return [
     'global' => [
         'yes' => 'Yes',
         'no' => 'No',
-        'noData' => 'No data'
+        'noData' => 'No data',
+        'value' => 'Value'
     ],
     'enumerations' => [
         'actionStatusType' => [

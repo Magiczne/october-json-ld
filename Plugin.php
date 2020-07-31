@@ -19,6 +19,7 @@ use Magiczne\JsonLd\Components\Level3\MediaObject\{
     MusicVideoObject,
     VideoObject
 };
+use Magiczne\JsonLd\Components\Level3\Enumeration\PhysicalActivityCategory;
 use Magiczne\JsonLd\Components\Level3\StructuredValue\{PropertyValue, QuantitativeValue};
 use Magiczne\JsonLd\Components\Level4\ImageObject\Barcode;
 use Magiczne\JsonLd\Components\Thing;
@@ -49,6 +50,9 @@ class Plugin extends PluginBase
             AlignmentObject::class => 'AlignmentObject',
             EntryPoint::class => 'EntryPoint',
             StructuredValue::class => 'StructuredValue',
+
+            // Level 3 - Enumeration
+            PhysicalActivityCategory::class => 'PhysicalActivityCategory',
 
             // Level 3 - Media Object
             AudioObject::class => 'AudioObject',

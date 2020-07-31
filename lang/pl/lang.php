@@ -8,6 +8,7 @@ return [
     'global' => [
         'yes' => 'Tak',
         'no' => 'Nie',
-        'noData' => 'Brak informacji'
+        'noData' => 'Brak informacji',
+        'value' => 'Wartość'
     ]
 ];

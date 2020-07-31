@@ -4,8 +4,6 @@ use Magiczne\JsonLd\Components\Thing;
 
 class Intangible extends Thing
 {
-    public $isHidden = true;
-
     public function componentDetails()
     {
         return [
