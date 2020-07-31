@@ -3,6 +3,19 @@
 class Enumerations
 {
     /**
+     * https://schema.org/ContactPointOption
+     */
+    public static $contactPointOption = [
+        'type' => 'dropdown',
+        'default' => 'enum::no-data',
+        'options' => [
+            'https://schema.org/HearingImpairedSupported' => 'magiczne.jsonld::lang.enumerations.contactPointOption.hearingImpairedSupported',
+            'https://schema.org/TollFree' => 'magiczne.jsonld::lang.enumerations.contactPointOption.tollFree',
+            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+        ]
+    ];
+
+    /**
      * https://schema.org/OfferItemCondition
      */
     public static $offerItemCondition = [

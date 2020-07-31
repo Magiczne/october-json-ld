@@ -20,7 +20,8 @@ use Magiczne\JsonLd\Components\Level3\MediaObject\{
     VideoObject
 };
 use Magiczne\JsonLd\Components\Level3\Enumeration\PhysicalActivityCategory;
-use Magiczne\JsonLd\Components\Level3\StructuredValue\{PropertyValue, QuantitativeValue};
+use Magiczne\JsonLd\Components\Level3\StructuredValue\{ContactPoint, PropertyValue, QuantitativeValue};
+use Magiczne\JsonLd\Components\Level4\ContactPoint\PostalAddress;
 use Magiczne\JsonLd\Components\Level4\ImageObject\Barcode;
 use Magiczne\JsonLd\Components\Thing;
 use System\Classes\PluginBase;
@@ -62,8 +63,12 @@ class Plugin extends PluginBase
             VideoObject::class => 'VideoObject',
 
             // Level 3 - Structured Value
+            ContactPoint::class => 'ContactPoint',
             PropertyValue::class => 'PropertyValue',
             QuantitativeValue::class => 'QuantitativeValue',
+
+            // Level 4 - Contact Point
+            PostalAddress::class => 'PostalAddress',
 
             // Level 4 - ImageObject
             Barcode::class => 'Barcode'
