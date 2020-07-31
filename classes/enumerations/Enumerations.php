@@ -16,6 +16,21 @@ class Enumerations
     ];
 
     /**
+     * https://schema.org/MapCategoryType
+     */
+    public static $mapCategoryType = [
+        'type' => 'dropdown',
+        'default' => 'enum::no-data',
+        'options' => [
+            'https://schema.org/ParkingMap' => 'magiczne.jsonld::lang.enumerations.mapCategoryType.parkingMap',
+            'https://schema.org/SeatingMap' => 'magiczne.jsonld::lang.enumerations.mapCategoryType.seatingMap',
+            'https://schema.org/TransitMap' => 'magiczne.jsonld::lang.enumerations.mapCategoryType.transitMap',
+            'https://schema.org/VenueMap' => 'magiczne.jsonld::lang.enumerations.mapCategoryType.venueMap',
+            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+        ]
+    ];
+
+    /**
      * https://schema.org/OfferItemCondition
      */
     public static $offerItemCondition = [

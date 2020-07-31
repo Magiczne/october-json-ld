@@ -29,6 +29,12 @@ return [
             'rescheduled' => 'Rescheduled',
             'scheduled' => 'Scheduled'
         ],
+        'mapCategoryType' => [
+            'parkingMap' => 'Parking map',
+            'seatingMap' => 'Seating map',
+            'transitMap' => 'Transit map',
+            'venueMap' => 'Venue map'
+        ],
         'offerItemCondition' => [
             'damagedCondition' => 'Damaged',
             'newCondition' => 'New',
@@ -96,6 +102,7 @@ return [
         'character' => 'Character',
         'children' => 'Children',
         'citation' => 'Citation',
+        'clipNumber' => 'Clip number',
         'code' => 'Code',
         'colleague' => 'Colleague',
         'color' => 'Color',
@@ -146,6 +153,7 @@ return [
         'encodingType' => 'Encoding type',
         'endDate' => 'End date',
         'endTime' => 'End time',
+        'episodeNumber' => 'Episode number',
         'error' => 'Error',
         'event' => 'Event',
         'eventStatus' => 'Event status',
@@ -212,6 +220,7 @@ return [
         'isSimilarTo' => 'Is similar to',
         'isVariantOf' => 'Is variant of',
         'itemCondition' => 'Item condition',
+        'itemReviewed' => 'Item reviewed',
 
         'keywords' => 'Keywords',
         'knows' => 'Knows',
@@ -231,6 +240,7 @@ return [
         'mainEntityOfPage' => 'Main entity of page',
         'makesOffer' => 'Makes offer',
         'manufacturer' => 'Manufacturer',
+        'mapType' => 'Map type',
         'material' => 'Material',
         'maximumAttendeeCapacity' => 'Maximum attendee capacity',
         'maxValue' => 'Max value',
@@ -258,6 +268,9 @@ return [
         'parent' => 'Parent',
         'parentOrganization' => 'Parent organization',
         'participant' => 'Participant',
+        'partOfEpisode' => 'Part of episode',
+        'partOfSeason' => 'Part of season',
+        'partOfSeries' => 'Part of series',
         'performer' => 'Performer',
         'performerIn' => 'Performer in',
         'photo' => 'Photo',
@@ -294,6 +307,9 @@ return [
         'requiresSubscription' => 'Required subscription',
         'result' => 'Result',
         'review' => 'Review',
+        'reviewAspect' => 'Review aspect',
+        'reviewBody' => 'Review body',
+        'reviewRating' => 'Review rating',
 
         'sameAs' => 'Same as',
         'schemaVersion' => 'Schema version',
@@ -330,6 +346,7 @@ return [
         'thumbnail' => 'Thumbnail',
         'thumbnailUrl' => 'Thumbnail URL',
         'timeRequired' => 'Time required',
+        'trailer' => 'Trailer',
         'transcript' => 'Transcript',
         'translator' => 'Translator',
         'typicalAgeRange' => 'Typical age range',

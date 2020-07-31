@@ -10,6 +10,9 @@ use Magiczne\JsonLd\Components\Level1\{
     Place,
     Product
 };
+use Magiczne\JsonLd\Components\Level2\CreativeWork\Clip;
+use Magiczne\JsonLd\Components\Level2\CreativeWork\Episode;
+use Magiczne\JsonLd\Components\Level2\CreativeWork\Map;
 use Magiczne\JsonLd\Components\Level2\CreativeWork\MediaObject;
 use Magiczne\JsonLd\Components\Level2\Intangible\{AlignmentObject, EntryPoint, StructuredValue};
 use Magiczne\JsonLd\Components\Level3\MediaObject\{
@@ -19,6 +22,8 @@ use Magiczne\JsonLd\Components\Level3\MediaObject\{
     MusicVideoObject,
     VideoObject
 };
+use Magiczne\JsonLd\Components\Level2\CreativeWork\Photograph;
+use Magiczne\JsonLd\Components\Level2\CreativeWork\Review;
 use Magiczne\JsonLd\Components\Level2\Product\ProductModel;
 use Magiczne\JsonLd\Components\Level3\Enumeration\PhysicalActivityCategory;
 use Magiczne\JsonLd\Components\Level3\StructuredValue\{ContactPoint, PropertyValue, QuantitativeValue};
@@ -46,7 +51,12 @@ class Plugin extends PluginBase
             Product::class => 'Product',
 
             // Level 2 - Creative Work
+            Clip::class => 'Clip',
+            Episode::class => 'Episode',
+            Map::class => 'Map',
             MediaObject::class => 'MediaObject',
+            Photograph::class => 'Photograph',
+            Review::class => 'Review',
 
             // Level 2 - Intangible
             AlignmentObject::class => 'AlignmentObject',
