@@ -14,7 +14,7 @@ use Magiczne\JsonLd\Components\Level2\CreativeWork\Clip;
 use Magiczne\JsonLd\Components\Level2\CreativeWork\Episode;
 use Magiczne\JsonLd\Components\Level2\CreativeWork\Map;
 use Magiczne\JsonLd\Components\Level2\CreativeWork\MediaObject;
-use Magiczne\JsonLd\Components\Level2\Intangible\{AlignmentObject, EntryPoint, StructuredValue};
+use Magiczne\JsonLd\Components\Level2\Intangible\{AlignmentObject, EntryPoint, Rating, StructuredValue};
 use Magiczne\JsonLd\Components\Level3\MediaObject\{
     AudioObject,
     DataDownload,
@@ -26,7 +26,7 @@ use Magiczne\JsonLd\Components\Level2\CreativeWork\Photograph;
 use Magiczne\JsonLd\Components\Level2\CreativeWork\Review;
 use Magiczne\JsonLd\Components\Level2\Product\ProductModel;
 use Magiczne\JsonLd\Components\Level3\Enumeration\PhysicalActivityCategory;
-use Magiczne\JsonLd\Components\Level3\StructuredValue\{ContactPoint, PropertyValue, QuantitativeValue};
+use Magiczne\JsonLd\Components\Level3\StructuredValue\{AggregateRating, ContactPoint, PropertyValue, QuantitativeValue};
 use Magiczne\JsonLd\Components\Level4\ContactPoint\PostalAddress;
 use Magiczne\JsonLd\Components\Level4\ImageObject\Barcode;
 use Magiczne\JsonLd\Components\Thing;
@@ -61,6 +61,7 @@ class Plugin extends PluginBase
             // Level 2 - Intangible
             AlignmentObject::class => 'AlignmentObject',
             EntryPoint::class => 'EntryPoint',
+            Rating::class => 'Rating',
             StructuredValue::class => 'StructuredValue',
 
             // Level 2 - Product
@@ -75,6 +76,9 @@ class Plugin extends PluginBase
             ImageObject::class => 'ImageObject',
             MusicVideoObject::class => 'MusicVideoObject',
             VideoObject::class => 'VideoObject',
+
+            // Level 3 - Rating
+            AggregateRating::class => 'AggregateRating',
 
             // Level 3 - Structured Value
             ContactPoint::class => 'ContactPoint',

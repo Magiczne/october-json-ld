@@ -91,6 +91,7 @@ return [
         'audio' => 'Audio',
         'author' => 'Author',
 
+        'bestRating' => 'Best rating',
         'birthDate' => 'Birth date',
         'birthPlace' => 'Birth place',
         'bitrate' => 'Bitrate',
@@ -294,6 +295,8 @@ return [
         'publishingPrinciples' => 'Publishing principles',
         'purchaseDate' => 'Purchase date',
 
+        'ratingCount' => 'Rating count',
+        'ratingValue' => 'Rating value',
         'recognizedAuthority' => 'Recognized authority',
         'recordedAt' => 'Recorded at',
         'recordedIn' => 'Recorded in',
@@ -309,6 +312,7 @@ return [
         'review' => 'Review',
         'reviewAspect' => 'Review aspect',
         'reviewBody' => 'Review body',
+        'reviewCount' => 'Review count',
         'reviewRating' => 'Review rating',
 
         'sameAs' => 'Same as',
@@ -371,6 +375,7 @@ return [
         'workFeatured' => 'Work featured',
         'workLocation' => 'Work location',
         'workPerformed' => 'Work performed',
-        'worksFor' => 'Works for'
+        'worksFor' => 'Works for',
+        'worstRating' => 'Worst rating',
     ]
 ];
