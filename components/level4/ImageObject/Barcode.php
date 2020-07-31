@@ -1,6 +1,8 @@
-<?php namespace Magiczne\JsonLd\Components;
+<?php namespace Magiczne\JsonLd\Components\Level4\ImageObject;
 
-class Barcode extends MediaObject
+use Magiczne\JsonLd\Components\Level3\MediaObject\ImageObject;
+
+class Barcode extends ImageObject
 {
     public function componentDetails()
     {

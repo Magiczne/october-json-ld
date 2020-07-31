@@ -1,6 +1,7 @@
-<?php namespace Magiczne\JsonLd\Components;
+<?php namespace Magiczne\JsonLd\Components\Level1;
 
 use Magiczne\JsonLd\Classes\Enumerations\StatusEnumerations;
+use Magiczne\JsonLd\Components\Thing;
 
 class Action extends Thing
 {

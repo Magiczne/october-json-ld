@@ -1,25 +1,27 @@
-<?php namespace Magiczne\JsonLd\Components;
+<?php namespace Magiczne\JsonLd\Components\Level3\StructuredValue;
 
-class QuantitativeValue extends StructuredValue
+use Magiczne\JsonLd\Components\Level2\Intangible\StructuredValue;
+
+class PropertyValue extends StructuredValue
 {
     public function componentDetails()
     {
         return [
-            'name' => 'QuantitativeValue',
-            'description' => 'https://schema.org/QuantitativeValue'
+            'name' => 'PropertyValue',
+            'description' => 'https://schema.org/PropertyValue'
         ];
     }
 
     public function defineProperties()
     {
         return array_merge(parent::defineProperties(), $this->generateProperties([
-            'additionalProperty',
             'maxValue',
             'minValue',
+            'propertyID',
             'unitCode',
             'unitText',
             'value',
             'valueReference'
-        ], 'QuantitativeValue'));
+        ], 'PropertyValue'));
     }
 }

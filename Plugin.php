@@ -1,26 +1,27 @@
 <?php namespace Magiczne\JsonLd;
 
-use Magiczne\JsonLd\Components\Action;
-use Magiczne\JsonLd\Components\AlignmentObject;
-use Magiczne\JsonLd\Components\AudioObject;
-use Magiczne\JsonLd\Components\Barcode;
-use Magiczne\JsonLd\Components\CreativeWork;
-use Magiczne\JsonLd\Components\DataDownload;
-use Magiczne\JsonLd\Components\EntryPoint;
-use Magiczne\JsonLd\Components\Event;
-use Magiczne\JsonLd\Components\ImageObject;
-use Magiczne\JsonLd\Components\MediaObject;
-use Magiczne\JsonLd\Components\MedicalEntity;
-use Magiczne\JsonLd\Components\MusicVideoObject;
-use Magiczne\JsonLd\Components\Organization;
-use Magiczne\JsonLd\Components\Person;
-use Magiczne\JsonLd\Components\Place;
-use Magiczne\JsonLd\Components\Product;
-use Magiczne\JsonLd\Components\PropertyValue;
-use Magiczne\JsonLd\Components\QuantitativeValue;
-use Magiczne\JsonLd\Components\StructuredValue;
+use Magiczne\JsonLd\Components\Level1\{
+    CreativeWork,
+    Event,
+    Action,
+    MedicalEntity,
+    Organization,
+    Person,
+    Place,
+    Product
+};
+use Magiczne\JsonLd\Components\Level2\CreativeWork\MediaObject;
+use Magiczne\JsonLd\Components\Level2\Intangible\{AlignmentObject, EntryPoint, StructuredValue};
+use Magiczne\JsonLd\Components\Level3\MediaObject\{
+    AudioObject,
+    DataDownload,
+    ImageObject,
+    MusicVideoObject,
+    VideoObject
+};
+use Magiczne\JsonLd\Components\Level3\StructuredValue\{PropertyValue, QuantitativeValue};
+use Magiczne\JsonLd\Components\Level4\ImageObject\Barcode;
 use Magiczne\JsonLd\Components\Thing;
-use Magiczne\JsonLd\Components\VideoObject;
 use System\Classes\PluginBase;
 
 class Plugin extends PluginBase

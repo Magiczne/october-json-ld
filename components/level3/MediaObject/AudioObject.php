@@ -1,4 +1,6 @@
-<?php namespace Magiczne\JsonLd\Components;
+<?php namespace Magiczne\JsonLd\Components\Level3\MediaObject;
+
+use Magiczne\JsonLd\Components\Level2\CreativeWork\MediaObject;
 
 class AudioObject extends MediaObject
 {

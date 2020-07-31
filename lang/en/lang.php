@@ -23,6 +23,15 @@ return [
             'postponed' => 'Postponed',
             'rescheduled' => 'Rescheduled',
             'scheduled' => 'Scheduled'
+        ],
+        'physicalActivityCategory' => [
+            'aerobicActivity' => 'Aerobic activity',
+            'anaerobicActivity' => 'Anaerobic activity',
+            'balance' => 'Balance',
+            'flexibility' => 'Flexibility',
+            'leisureTimeActivity' => 'Leisure time activity',
+            'occupationalActivity' => 'Occupational activity',
+            'strengthTraining' => 'Strength training'
         ]
     ],
     'properties' => [

@@ -1,4 +1,6 @@
-<?php namespace Magiczne\JsonLd\Components;
+<?php namespace Magiczne\JsonLd\Components\Level2\CreativeWork;
+
+use Magiczne\JsonLd\Components\Level1\CreativeWork;
 
 class MediaObject extends CreativeWork
 {

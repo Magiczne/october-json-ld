@@ -1,4 +1,6 @@
-<?php namespace Magiczne\JsonLd\Components;
+<?php namespace Magiczne\JsonLd\Components\Level2\Intangible;
+
+use Magiczne\JsonLd\Components\Level1\Intangible;
 
 class AlignmentObject extends Intangible
 {

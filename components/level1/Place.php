@@ -1,4 +1,6 @@
-<?php namespace Magiczne\JsonLd\Components;
+<?php namespace Magiczne\JsonLd\Components\Level1;
+
+use Magiczne\JsonLd\Components\Thing;
 
 class Place extends Thing
 {
