@@ -266,6 +266,7 @@ return [
         'postalCode' => 'Postal code',
         'postOfficeBoxNumber' => 'Post office box number',
         'potentialAction' => 'Potential action',
+        'predecessorOf' => 'Predecessor of',
         'previousStartDate' => 'Previous start date',
         'producer' => 'Producer',
         'productID' => 'Product ID',
@@ -314,6 +315,7 @@ return [
         'subEvent' => 'Sub event',
         'subOrganization' => 'Sub organization',
         'subjectOf' => 'Subject of',
+        'successorOf' => 'Successor of',
         'superEvent' => 'Super event',
 
         'target' => 'Target',

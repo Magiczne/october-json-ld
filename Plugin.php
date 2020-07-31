@@ -19,6 +19,7 @@ use Magiczne\JsonLd\Components\Level3\MediaObject\{
     MusicVideoObject,
     VideoObject
 };
+use Magiczne\JsonLd\Components\Level2\Product\ProductModel;
 use Magiczne\JsonLd\Components\Level3\Enumeration\PhysicalActivityCategory;
 use Magiczne\JsonLd\Components\Level3\StructuredValue\{ContactPoint, PropertyValue, QuantitativeValue};
 use Magiczne\JsonLd\Components\Level4\ContactPoint\PostalAddress;
@@ -51,6 +52,9 @@ class Plugin extends PluginBase
             AlignmentObject::class => 'AlignmentObject',
             EntryPoint::class => 'EntryPoint',
             StructuredValue::class => 'StructuredValue',
+
+            // Level 2 - Product
+            ProductModel::class => 'ProductModel',
 
             // Level 3 - Enumeration
             PhysicalActivityCategory::class => 'PhysicalActivityCategory',
