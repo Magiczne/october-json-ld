@@ -27,6 +27,7 @@ use Magiczne\JsonLd\Components\Level2\CreativeWork\Review;
 use Magiczne\JsonLd\Components\Level2\Product\ProductModel;
 use Magiczne\JsonLd\Components\Level3\Enumeration\PhysicalActivityCategory;
 use Magiczne\JsonLd\Components\Level3\StructuredValue\{ContactPoint,
+    GeoCoordinates,
     GeoShape,
     PropertyValue,
     QuantitativeValue};
@@ -86,6 +87,7 @@ class Plugin extends PluginBase
 
             // Level 3 - Structured Value
             ContactPoint::class => 'ContactPoint',
+            GeoCoordinates::class => 'GeoCoordinates',
             GeoShape::class => 'GeoShape',
             PropertyValue::class => 'PropertyValue',
             QuantitativeValue::class => 'QuantitativeValue',
