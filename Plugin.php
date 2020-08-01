@@ -10,11 +10,19 @@ use Magiczne\JsonLd\Components\Level1\{
     Place,
     Product
 };
-use Magiczne\JsonLd\Components\Level2\CreativeWork\Clip;
-use Magiczne\JsonLd\Components\Level2\CreativeWork\Episode;
-use Magiczne\JsonLd\Components\Level2\CreativeWork\Map;
-use Magiczne\JsonLd\Components\Level2\CreativeWork\MediaObject;
-use Magiczne\JsonLd\Components\Level2\Intangible\{AlignmentObject, EntryPoint, Rating, StructuredValue};
+use Magiczne\JsonLd\Components\Level2\CreativeWork\{Clip,
+    Episode,
+    Map,
+    MediaObject,
+    Photograph,
+    Review,
+    WebPage,
+    WebPageElement};
+use Magiczne\JsonLd\Components\Level2\Intangible\{AlignmentObject,
+    EntryPoint,
+    Rating,
+    SpeakableSpecification,
+    StructuredValue};
 use Magiczne\JsonLd\Components\Level3\MediaObject\{
     AudioObject,
     DataDownload,
@@ -23,7 +31,6 @@ use Magiczne\JsonLd\Components\Level3\MediaObject\{
     VideoObject
 };
 use Magiczne\JsonLd\Components\Level2\Event\PublicationEvent;
-use Magiczne\JsonLd\Components\Level2\CreativeWork\Review;
 use Magiczne\JsonLd\Components\Level2\Place\AdministrativeArea;
 use Magiczne\JsonLd\Components\Level2\Product\ProductModel;
 use Magiczne\JsonLd\Components\Level3\Enumeration\PhysicalActivityCategory;
@@ -33,6 +40,16 @@ use Magiczne\JsonLd\Components\Level3\StructuredValue\{ContactPoint,
     PropertyValue,
     QuantitativeValue};
 use Magiczne\JsonLd\Components\Level3\Rating\AggregateRating;
+use Magiczne\JsonLd\Components\Level3\WebPage\AboutPage;
+use Magiczne\JsonLd\Components\Level3\WebPage\CheckoutPage;
+use Magiczne\JsonLd\Components\Level3\WebPage\CollectionPage;
+use Magiczne\JsonLd\Components\Level3\WebPage\ContactPage;
+use Magiczne\JsonLd\Components\Level3\WebPage\FAQPage;
+use Magiczne\JsonLd\Components\Level3\WebPage\ItemPage;
+use Magiczne\JsonLd\Components\Level3\WebPage\MedicalWebPage;
+use Magiczne\JsonLd\Components\Level3\WebPage\ProfilePage;
+use Magiczne\JsonLd\Components\Level3\WebPage\QAPage;
+use Magiczne\JsonLd\Components\Level3\WebPage\SearchResultsPage;
 use Magiczne\JsonLd\Components\Level4\ContactPoint\PostalAddress;
 use Magiczne\JsonLd\Components\Level4\ImageObject\Barcode;
 use Magiczne\JsonLd\Components\Thing;
@@ -63,6 +80,9 @@ class Plugin extends PluginBase
             MediaObject::class => 'MediaObject',
             Photograph::class => 'Photograph',
             Review::class => 'Review',
+            WebPage::class => 'WebPage',
+            WebPageElement::class => 'WebPageElement',
+
             // Level 2 - Event
             PublicationEvent::class => 'PublicationEvent',
 
@@ -70,6 +90,7 @@ class Plugin extends PluginBase
             AlignmentObject::class => 'AlignmentObject',
             EntryPoint::class => 'EntryPoint',
             Rating::class => 'Rating',
+            SpeakableSpecification::class => 'SpeakableSpecification',
             StructuredValue::class => 'StructuredValue',
 
             // Level 2 - Place
@@ -97,6 +118,18 @@ class Plugin extends PluginBase
             GeoShape::class => 'GeoShape',
             PropertyValue::class => 'PropertyValue',
             QuantitativeValue::class => 'QuantitativeValue',
+
+            // Level 3 - Web Page
+            AboutPage::class => 'AboutPage',
+            CheckoutPage::class => 'CheckoutPage',
+            CollectionPage::class => 'CollectionPage',
+            ContactPage::class => 'ContactPage',
+            FAQPage::class => 'FAQPage',
+            ItemPage::class => 'ItemPage',
+            MedicalWebPage::class => 'MedicalWebPage',
+            ProfilePage::class => 'ProfilePage',
+            QAPage::class => 'QAPage',
+            SearchResultsPage::class => 'SearchResultsPage',
 
             // Level 4 - Contact Point
             PostalAddress::class => 'PostalAddress',

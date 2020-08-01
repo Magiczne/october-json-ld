@@ -98,6 +98,7 @@ return [
         'box' => 'Box',
         'branchCode' => 'Branch code',
         'brand' => 'Brand',
+        'breadcrumb' => 'Breadcrumb',
 
         'caption' => 'Caption',
         'category' => 'Category',
@@ -126,6 +127,7 @@ return [
         'copyrightHolder' => 'Copyright holder',
         'copyrightYear' => 'Copyright year',
         'creator' => 'Creator',
+        'cssSelector' => 'CSS Selector',
 
         'dateCreated' => 'Date created',
         'dateModified' => 'Date modified',
@@ -230,6 +232,7 @@ return [
         'knows' => 'Knows',
 
         'latitude' => 'Latitude',
+        'lastReviewed' => 'Last reviewed',
         'learningResourceType' => 'Learning resource type',
         'legalName' => 'Legal name',
         'legalStatus' => 'Legal status',
@@ -241,6 +244,7 @@ return [
         'logo' => 'Logo',
         'longitude' => 'Longitude',
 
+        'mainContentOfPage' => 'Main content of page',
         'mainEntity' => 'Main entity',
         'mainEntityOfPage' => 'Main entity of page',
         'makesOffer' => 'Makes offer',
@@ -249,6 +253,7 @@ return [
         'material' => 'Material',
         'maximumAttendeeCapacity' => 'Maximum attendee capacity',
         'maxValue' => 'Max value',
+        'medicalAudience' => 'Medical audience',
         'medicineSystem' => 'Medicine system',
         'member' => 'Member',
         'memberOf' => 'Member of',
@@ -287,6 +292,7 @@ return [
         'potentialAction' => 'Potential action',
         'predecessorOf' => 'Predecessor of',
         'previousStartDate' => 'Previous start date',
+        'primaryImageOfPage' => 'Primary image of page',
         'producer' => 'Producer',
         'productID' => 'Product ID',
         'productSupported' => 'Product supported',
@@ -307,6 +313,7 @@ return [
         'recordedAt' => 'Recorded at',
         'recordedIn' => 'Recorded in',
         'regionsAllowed' => 'Regions allowed',
+        'relatedLink' => 'Related link',
         'relatedTo' => 'Related to',
         'releaseDate' => 'Release date',
         'releasedEvent' => 'Released event',
@@ -320,17 +327,21 @@ return [
         'reviewBody' => 'Review body',
         'reviewCount' => 'Review count',
         'reviewRating' => 'Review rating',
+        'reviewedBy' => 'Reviewed by',
 
         'sameAs' => 'Same as',
         'schemaVersion' => 'Schema version',
         'seeks' => 'Seeks',
         'sibling' => 'Sibling',
+        'significantLink' => 'Significant link',
         'sku' => 'SKU',
         'slogan' => 'Slogan',
         'smokingAllowed' => 'Smoking allowed',
         'sourceOrganization' => 'Source organization',
         'spatial' => 'Spatial',
         'spatialCoverage' => 'Spatial coverage',
+        'speakable' => 'Speakable',
+        'specialty' => 'Specialty',
         'specialOpeningHoursSpecification' => 'Special opening hours specification',
         'sponsor' => 'Sponsor',
         'spouse' => 'Spouse',
@@ -383,5 +394,7 @@ return [
         'workPerformed' => 'Work performed',
         'worksFor' => 'Works for',
         'worstRating' => 'Worst rating',
+
+        'xpath' => 'XPath'
     ]
 ];
