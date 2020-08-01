@@ -38,6 +38,7 @@ use Magiczne\JsonLd\Components\Level3\Enumeration\PhysicalActivityCategory;
 use Magiczne\JsonLd\Components\Level3\StructuredValue\{ContactPoint,
     GeoCoordinates,
     GeoShape,
+    InteractionCounter,
     PropertyValue,
     QuantitativeValue};
 use Magiczne\JsonLd\Components\Level3\Rating\AggregateRating;
@@ -118,6 +119,7 @@ class Plugin extends PluginBase
             ContactPoint::class => 'ContactPoint',
             GeoCoordinates::class => 'GeoCoordinates',
             GeoShape::class => 'GeoShape',
+            InteractionCounter::class => 'InteractionCounter',
             PropertyValue::class => 'PropertyValue',
             QuantitativeValue::class => 'QuantitativeValue',
 

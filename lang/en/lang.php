@@ -214,7 +214,9 @@ return [
         'image' => 'Image',
         'inLanguage' => 'In language',
         'instrument' => 'Instrument',
+        'interactionService' => 'Interaction service',
         'interactionStatistic' => 'Interaction statistic',
+        'interactionType' => 'Interaction type',
         'interactivityType' => 'Interactivity type',
         'isAccessibleForFree' => 'Is accessible for free',
         'isAccessoryOrSparePartFor' => 'Is accessory or spare part for',
@@ -380,6 +382,7 @@ return [
         'uploadDate' => 'Upload date',
         'url' => 'URL',
         'urlTemplate' => 'URL template',
+        'userInteractionCount' => 'User interaction count',
 
         'value' => 'Value',
         'valueReference' => 'Value reference',
