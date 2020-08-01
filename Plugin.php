@@ -24,6 +24,7 @@ use Magiczne\JsonLd\Components\Level3\MediaObject\{
 };
 use Magiczne\JsonLd\Components\Level2\CreativeWork\Photograph;
 use Magiczne\JsonLd\Components\Level2\CreativeWork\Review;
+use Magiczne\JsonLd\Components\Level2\Place\AdministrativeArea;
 use Magiczne\JsonLd\Components\Level2\Product\ProductModel;
 use Magiczne\JsonLd\Components\Level3\Enumeration\PhysicalActivityCategory;
 use Magiczne\JsonLd\Components\Level3\StructuredValue\{ContactPoint,
@@ -68,6 +69,9 @@ class Plugin extends PluginBase
             EntryPoint::class => 'EntryPoint',
             Rating::class => 'Rating',
             StructuredValue::class => 'StructuredValue',
+
+            // Level 2 - Place
+            AdministrativeArea::class => 'AdministrativeArea',
 
             // Level 2 - Product
             ProductModel::class => 'ProductModel',
