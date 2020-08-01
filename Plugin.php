@@ -26,7 +26,11 @@ use Magiczne\JsonLd\Components\Level2\CreativeWork\Photograph;
 use Magiczne\JsonLd\Components\Level2\CreativeWork\Review;
 use Magiczne\JsonLd\Components\Level2\Product\ProductModel;
 use Magiczne\JsonLd\Components\Level3\Enumeration\PhysicalActivityCategory;
-use Magiczne\JsonLd\Components\Level3\StructuredValue\{AggregateRating, ContactPoint, PropertyValue, QuantitativeValue};
+use Magiczne\JsonLd\Components\Level3\StructuredValue\{AggregateRating,
+    ContactPoint,
+    GeoShape,
+    PropertyValue,
+    QuantitativeValue};
 use Magiczne\JsonLd\Components\Level4\ContactPoint\PostalAddress;
 use Magiczne\JsonLd\Components\Level4\ImageObject\Barcode;
 use Magiczne\JsonLd\Components\Thing;
@@ -82,6 +86,7 @@ class Plugin extends PluginBase
 
             // Level 3 - Structured Value
             ContactPoint::class => 'ContactPoint',
+            GeoShape::class => 'GeoShape',
             PropertyValue::class => 'PropertyValue',
             QuantitativeValue::class => 'QuantitativeValue',
 
