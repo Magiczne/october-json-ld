@@ -296,6 +296,7 @@ return [
         'provider' => 'Provider',
         'publicAccess' => 'Public access',
         'publication' => 'Publication',
+        'publishedOn' => 'Published on',
         'publisher' => 'Publisher',
         'publishingPrinciples' => 'Publishing principles',
         'purchaseDate' => 'Purchase date',

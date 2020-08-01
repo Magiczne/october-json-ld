@@ -22,7 +22,7 @@ use Magiczne\JsonLd\Components\Level3\MediaObject\{
     MusicVideoObject,
     VideoObject
 };
-use Magiczne\JsonLd\Components\Level2\CreativeWork\Photograph;
+use Magiczne\JsonLd\Components\Level2\Event\PublicationEvent;
 use Magiczne\JsonLd\Components\Level2\CreativeWork\Review;
 use Magiczne\JsonLd\Components\Level2\Place\AdministrativeArea;
 use Magiczne\JsonLd\Components\Level2\Product\ProductModel;
@@ -63,6 +63,8 @@ class Plugin extends PluginBase
             MediaObject::class => 'MediaObject',
             Photograph::class => 'Photograph',
             Review::class => 'Review',
+            // Level 2 - Event
+            PublicationEvent::class => 'PublicationEvent',
 
             // Level 2 - Intangible
             AlignmentObject::class => 'AlignmentObject',
