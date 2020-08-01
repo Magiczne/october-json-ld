@@ -26,11 +26,11 @@ use Magiczne\JsonLd\Components\Level2\CreativeWork\Photograph;
 use Magiczne\JsonLd\Components\Level2\CreativeWork\Review;
 use Magiczne\JsonLd\Components\Level2\Product\ProductModel;
 use Magiczne\JsonLd\Components\Level3\Enumeration\PhysicalActivityCategory;
-use Magiczne\JsonLd\Components\Level3\StructuredValue\{AggregateRating,
-    ContactPoint,
+use Magiczne\JsonLd\Components\Level3\StructuredValue\{ContactPoint,
     GeoShape,
     PropertyValue,
     QuantitativeValue};
+use Magiczne\JsonLd\Components\Level3\Rating\AggregateRating;
 use Magiczne\JsonLd\Components\Level4\ContactPoint\PostalAddress;
 use Magiczne\JsonLd\Components\Level4\ImageObject\Barcode;
 use Magiczne\JsonLd\Components\Thing;

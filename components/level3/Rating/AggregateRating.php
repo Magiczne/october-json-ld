@@ -1,4 +1,4 @@
-<?php namespace Magiczne\JsonLd\Components\Level3\StructuredValue;
+<?php namespace Magiczne\JsonLd\Components\Level3\Rating;
 
 use Magiczne\JsonLd\Components\Level2\Intangible\Rating;
 
