@@ -65,6 +65,7 @@ return [
         'actionPlatform' => 'Action platform',
         'actionStatus' => 'Action status',
         'actor' => 'Actor',
+        'acquiredForm' => 'Acquired form',
         'additionalName' => 'Additional name',
         'additionalProperty' => 'Additional property',
         'additionalType' => 'Additional type',
@@ -277,6 +278,8 @@ return [
         'offers' => 'Offers',
         'openingHoursSpecification' => 'Opening hours specification',
         'organizer' => 'Organizer',
+        'ownedForm' => 'Owned form',
+        'ownedThrough' => 'Owned through',
         'owns' => 'Owns',
 
         'parent' => 'Parent',
@@ -375,6 +378,7 @@ return [
         'trailer' => 'Trailer',
         'transcript' => 'Transcript',
         'translator' => 'Translator',
+        'typeOfGood' => 'Type of good',
         'typicalAgeRange' => 'Typical age range',
 
         'unitCode' => 'Unit code',

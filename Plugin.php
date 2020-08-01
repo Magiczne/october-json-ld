@@ -39,6 +39,7 @@ use Magiczne\JsonLd\Components\Level3\StructuredValue\{ContactPoint,
     GeoCoordinates,
     GeoShape,
     InteractionCounter,
+    OwnershipInfo,
     PropertyValue,
     QuantitativeValue};
 use Magiczne\JsonLd\Components\Level3\Rating\AggregateRating;
@@ -120,6 +121,7 @@ class Plugin extends PluginBase
             GeoCoordinates::class => 'GeoCoordinates',
             GeoShape::class => 'GeoShape',
             InteractionCounter::class => 'InteractionCounter',
+            OwnershipInfo::class => 'OwnershipInfo',
             PropertyValue::class => 'PropertyValue',
             QuantitativeValue::class => 'QuantitativeValue',
 
