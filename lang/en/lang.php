@@ -129,6 +129,7 @@ return [
         'copyrightYear' => 'Copyright year',
         'creator' => 'Creator',
         'cssSelector' => 'CSS Selector',
+        'currency' => 'Currency',
 
         'dateCreated' => 'Date created',
         'dateModified' => 'Date modified',
@@ -388,6 +389,8 @@ return [
         'urlTemplate' => 'URL template',
         'userInteractionCount' => 'User interaction count',
 
+        'validFrom' => 'Valid from',
+        'validThrough' => 'Valid through',
         'value' => 'Value',
         'valueReference' => 'Value reference',
         'vatID' => 'The Value-added Tax ID',
