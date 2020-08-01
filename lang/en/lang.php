@@ -206,6 +206,7 @@ return [
         'homeLocation' => 'Home location',
         'honorificPrefix' => 'Honorific prefix',
         'honorificSuffix' => 'Honoric suffix',
+        'hostingOrganization' => 'Hosting organization',
         'hoursAvailable' => 'Hours available',
         'httpMethod' => 'HTTP Method',
 
@@ -257,6 +258,7 @@ return [
         'medicineSystem' => 'Medicine system',
         'member' => 'Member',
         'memberOf' => 'Member of',
+        'membershipNumber' => 'Membership numbe',
         'mentions' => 'Mentions',
         'minValue' => 'Min value',
         'model' => 'Model',
@@ -298,6 +300,7 @@ return [
         'productSupported' => 'Product supported',
         'productionDate' => 'Production date',
         'productionCompany' => 'Production company',
+        'programName' => 'Program name',
         'propertyID' => 'Property ID',
         'provider' => 'Provider',
         'publicAccess' => 'Public access',

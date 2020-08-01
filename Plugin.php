@@ -20,6 +20,7 @@ use Magiczne\JsonLd\Components\Level2\CreativeWork\{Clip,
     WebPageElement};
 use Magiczne\JsonLd\Components\Level2\Intangible\{AlignmentObject,
     EntryPoint,
+    ProgramMembership,
     Rating,
     SpeakableSpecification,
     StructuredValue};
@@ -89,6 +90,7 @@ class Plugin extends PluginBase
             // Level 2 - Intangible
             AlignmentObject::class => 'AlignmentObject',
             EntryPoint::class => 'EntryPoint',
+            ProgramMembership::class => 'ProgramMembership',
             Rating::class => 'Rating',
             SpeakableSpecification::class => 'SpeakableSpecification',
             StructuredValue::class => 'StructuredValue',
