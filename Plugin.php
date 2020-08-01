@@ -20,6 +20,8 @@ use Magiczne\JsonLd\Components\Level2\CreativeWork\{Clip,
     WebPageElement};
 use Magiczne\JsonLd\Components\Level2\Intangible\{AlignmentObject,
     EntryPoint,
+    ItemList,
+    ListItem,
     ProgramMembership,
     Rating,
     SpeakableSpecification,
@@ -34,6 +36,7 @@ use Magiczne\JsonLd\Components\Level3\MediaObject\{
 use Magiczne\JsonLd\Components\Level2\Event\PublicationEvent;
 use Magiczne\JsonLd\Components\Level2\Place\AdministrativeArea;
 use Magiczne\JsonLd\Components\Level2\Product\ProductModel;
+use Magiczne\JsonLd\Components\Level3\Enumeration\ItemListOrderType;
 use Magiczne\JsonLd\Components\Level3\Enumeration\PhysicalActivityCategory;
 use Magiczne\JsonLd\Components\Level3\StructuredValue\{ContactPoint,
     GeoCoordinates,
@@ -43,6 +46,8 @@ use Magiczne\JsonLd\Components\Level3\StructuredValue\{ContactPoint,
     OwnershipInfo,
     PropertyValue,
     QuantitativeValue};
+use Magiczne\JsonLd\Components\Level3\ItemList\BreadcrumbList;
+use Magiczne\JsonLd\Components\Level3\ItemList\OfferCatalog;
 use Magiczne\JsonLd\Components\Level3\Rating\AggregateRating;
 use Magiczne\JsonLd\Components\Level3\WebPage\AboutPage;
 use Magiczne\JsonLd\Components\Level3\WebPage\CheckoutPage;
@@ -93,6 +98,8 @@ class Plugin extends PluginBase
             // Level 2 - Intangible
             AlignmentObject::class => 'AlignmentObject',
             EntryPoint::class => 'EntryPoint',
+            ItemList::class => 'ItemList',
+            ListItem::class => 'ListItem',
             ProgramMembership::class => 'ProgramMembership',
             Rating::class => 'Rating',
             SpeakableSpecification::class => 'SpeakableSpecification',
@@ -105,7 +112,12 @@ class Plugin extends PluginBase
             ProductModel::class => 'ProductModel',
 
             // Level 3 - Enumeration
+            ItemListOrderType::class => 'ItemListOrderType',
             PhysicalActivityCategory::class => 'PhysicalActivityCategory',
+
+            // Level 3 - Item List
+            BreadcrumbList::class => 'BreadcrumbList',
+            OfferCatalog::class => 'OfferCatalog',
 
             // Level 3 - Media Object
             AudioObject::class => 'AudioObject',

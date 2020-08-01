@@ -29,6 +29,11 @@ return [
             'rescheduled' => 'Rescheduled',
             'scheduled' => 'Scheduled'
         ],
+        'itemListOrderType' => [
+            'itemListOrderAscending' => 'Ascending',
+            'itemListOrderDescending' => 'Descending',
+            'itemListUnordered' => 'Unordered'
+        ],
         'mapCategoryType' => [
             'parkingMap' => 'Parking map',
             'seatingMap' => 'Seating map',
@@ -230,7 +235,10 @@ return [
         'isRelatedTo' => 'Is related to',
         'isSimilarTo' => 'Is similar to',
         'isVariantOf' => 'Is variant of',
+        'item' => 'Item',
         'itemCondition' => 'Item condition',
+        'itemListElement' => 'Item list element',
+        'itemListOrder' => 'Item list order',
         'itemReviewed' => 'Item reviewed',
 
         'keywords' => 'Keywords',
@@ -273,7 +281,9 @@ return [
         'name' => 'Name',
         'nationality' => 'Nationality',
         'netWorth' => 'Net worth',
+        'nextItem' => 'Next item',
         'numberOfEmployees' => 'Number of employees',
+        'numberOfItems' => 'Number of items',
 
         'object' => 'Object',
         'offers' => 'Offers',
@@ -299,6 +309,7 @@ return [
         'postOfficeBoxNumber' => 'Post office box number',
         'potentialAction' => 'Potential action',
         'predecessorOf' => 'Predecessor of',
+        'previousItem' => 'Previous item',
         'previousStartDate' => 'Previous start date',
         'primaryImageOfPage' => 'Primary image of page',
         'producer' => 'Producer',
