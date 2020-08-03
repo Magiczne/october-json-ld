@@ -166,6 +166,7 @@ return [
         'encodingType' => 'Encoding type',
         'endDate' => 'End date',
         'endTime' => 'End time',
+        'episode' => 'Episode',
         'episodeNumber' => 'Episode number',
         'error' => 'Error',
         'event' => 'Event',
@@ -283,6 +284,7 @@ return [
         'netWorth' => 'Net worth',
         'nextItem' => 'Next item',
         'numberOfEmployees' => 'Number of employees',
+        'numberOfEpisodes' => 'Number of episodes',
         'numberOfItems' => 'Number of items',
 
         'object' => 'Object',
@@ -351,6 +353,7 @@ return [
 
         'sameAs' => 'Same as',
         'schemaVersion' => 'Schema version',
+        'seasonNumber' => 'Season number',
         'seeks' => 'Seeks',
         'sibling' => 'Sibling',
         'significantLink' => 'Significant link',

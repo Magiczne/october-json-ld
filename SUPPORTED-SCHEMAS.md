@@ -6,6 +6,7 @@
   - [Action](https://schema.org/Action)
   - [CreativeWork](https://schema.org/CreativeWork)
     - [Clip](https://schema.org/Clip)
+    - [CreativeWorkSeason](https://schema.org/CreativeWorkSeason)
     - [Episode](https://schema.org/Episode)
     - [Map](https://schema.org/Map)
     - [MediaObject](https://schema.org/MediaObject)

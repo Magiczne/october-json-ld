@@ -11,6 +11,7 @@ use Magiczne\JsonLd\Components\Level1\{
     Product
 };
 use Magiczne\JsonLd\Components\Level2\CreativeWork\{Clip,
+    CreativeWorkSeason,
     Episode,
     Map,
     MediaObject,
@@ -85,6 +86,7 @@ class Plugin extends PluginBase
 
             // Level 2 - Creative Work
             Clip::class => 'Clip',
+            CreativeWorkSeason::class => 'CreativeWorkSeason',
             Episode::class => 'Episode',
             Map::class => 'Map',
             MediaObject::class => 'MediaObject',
