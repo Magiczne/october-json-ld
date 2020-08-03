@@ -1,0 +1,78 @@
+# List of currently supported schemas
+
+> List elements that are **_italic and bold_** are implemented but there are not available as a component to use.
+
+- [Thing](https://schema.org/Thing)
+  - [Action](https://schema.org/Action)
+  - [CreativeWork](https://schema.org/CreativeWork)
+    - [Clip](https://schema.org/Clip)
+    - [Episode](https://schema.org/Episode)
+    - [Map](https://schema.org/Map)
+    - [MediaObject](https://schema.org/MediaObject)
+      - [AudioObject](https://schema.org/AudioObject)
+      - [DataDownload](https://schema.org/DataDownload)
+      - [ImageObject](https://schema.org/ImageObject)
+        - [Barcode](https://schema.org/Barcode)
+      - [MusicVideoObject](https://schema.org/MusicVideoObject)
+      - [VideoObject](https://schema.org/VideoObject)
+    - [Photograph](https://schema.org/Photograph)
+    - [Review](https://schema.org/Review)
+    - [WebPage](https://schema.org/WebPage)
+      - [AboutPage](https://schema.org/AboutPage)
+      - [CheckoutPage](https://schema.org/CheckoutPage)
+      - [CollectionPage](https://schema.org/CollectionPage)
+      - [ContactPage](https://schema.org/ContactPage)
+      - [FAQPage](https://schema.org/FAQPage)
+      - [ItemPage](https://schema.org/ItemPage)
+      - [MedicalWebPage](https://schema.org/MedicalWebPage)
+      - [ProfilePage](https://schema.org/ProfilePage)
+      - [QAPage](https://schema.org/QAPage)
+      - [SearchResultsPage](https://schema.org/SearchResultsPage)
+    - [WebPageElement](https://schema.org/WebPageElement)
+  - [Event](https://schema.org/Event)
+    - [PublicationEvent](https://schema.org/PublicationEvent)
+  - **_[Intangible](https://schema.org/Intangible)_**
+    - [AlignmentObject](https://schema.org/AlignmentObject)
+    - [Brand](https://schema.org/Brand)
+    - [EntryPoint](https://schema.org/EntryPoint)
+    - **_[Enumeration](https://schema.org/Enumeration)_**
+      - [ItemListOrderType](https://schema.org/ItemListOrderType)
+      - [PhysicalActivityCategory](https://schema.org/PhysicalActivityCategory)
+    - [ItemList](https://schema.org/ItemList)
+      - [BreadcrumbList](https://schema.org/BreadcrumbList)
+      - [OfferCatalog](https://schema.org/OfferCatalog)
+    - [ListItem](https://schema.org/ListItem)
+    - [ProgramMembership](https://schema.org/ProgramMembership)
+    - [Rating](https://schema.org/Rating)
+      - [AggregateRating](https://schema.org/AggregateRating)
+    - [SpekableSpecification](https://schema.org/SpekableSpecification)
+    - [StructuredValue](https://schema.org/StructuredValue)
+      - [ContactPoint](https://schema.org/ContactPoint)
+        - [PostalAddress](https://schema.org/PostalAddress)
+      - [GeoCoordinates](https://schema.org/GeoCoordinates)
+      - [GeoShape](https://schema.org/GeoShape)
+      - [InteractionCounter](https://schema.org/InteractionCounter)
+      - [MonetaryAmount](https://schema.org/MonetaryAmount)
+      - [OwnershipInfo](https://schema.org/OwnershipInfo)
+      - [PropertyValue](https://schema.org/PropertyValue)
+      - [QuantitativeValue](https://schema.org/QuantitativeValue)
+  - [MedicalEntity](https://schema.org/MedicalEntity)
+  - [Organization](https://schema.org/Organization)
+  - [Person](https://schema.org/Person)
+  - [Place](https://schema.org/Place)
+    - [AdministrativeArea](https://schema.org/AdministrativeArea)
+  - [Product](https://schema.org/Product)
+    - [ProductModel](https://schema.org/ProductModel)
+
+## Enumerations
+Additionally, there are enumerations that are only viable option for a certain field,
+and these are implemented as dropdown lists in the component fields.
+
+Here are these enumerations:
+- **_[Enumeration](https://schema.org/Enumeration)_**
+  - [ContactPointOption](https://schema.org/ContactPointOption)
+  - [MapCategoryType](https://schema.org/MapCategoryType)
+  - [OfferItemCondition](https://schema.org/OfferItemCondition)
+  - **_[StatusEnumeration](https://schema.org/StatusEnumeration)_**
+    - [ActionStatusType](https://schema.org/ActionStatusType)
+    - [EventStatusType](https://schema.org/EventStatusType)
