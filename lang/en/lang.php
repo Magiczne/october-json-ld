@@ -22,6 +22,16 @@ return [
             'hearingImpairedSupported' => 'Hearing impaired supported',
             'tollFree' => 'Toll free'
         ],
+        'dayOfWeek' => [
+            'friday' => 'Friday',
+            'monday' => 'Monday',
+            'publicHolidays' => 'Public holidays',
+            'saturday' => 'Saturday',
+            'sunday' => 'Sunday',
+            'thursday' => 'Thursday',
+            'tuesday' => 'Tuesday',
+            'wednesday' => 'Wednesday'
+        ],
         'eventStatusType' => [
             'cancelled' => 'Cancelled',
             'movedOnline' => 'Moved online',
@@ -113,6 +123,7 @@ return [
         'circle' => 'Circle',
         'citation' => 'Citation',
         'clipNumber' => 'Clip number',
+        'closes' => 'Closes',
         'code' => 'Code',
         'colleague' => 'Colleague',
         'color' => 'Color',
@@ -139,6 +150,7 @@ return [
         'dateCreated' => 'Date created',
         'dateModified' => 'Date modified',
         'datePublished' => 'Date published',
+        'dayOfWeek' => 'Day of week',
         'deathDate' => 'Death date',
         'deathPlace' => 'Death place',
         'department' => 'Department',
@@ -290,6 +302,7 @@ return [
         'object' => 'Object',
         'offers' => 'Offers',
         'openingHoursSpecification' => 'Opening hours specification',
+        'opens' => 'Opens',
         'organizer' => 'Organizer',
         'ownedForm' => 'Owned form',
         'ownedThrough' => 'Owned through',

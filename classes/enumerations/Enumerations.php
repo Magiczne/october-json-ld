@@ -16,6 +16,25 @@ class Enumerations
     ];
 
     /**
+     * https://schema.org/DayOfWeek
+     */
+    public static $dayOfWeek = [
+        'type' => 'dropdown',
+        'default' => 'enum::no-data',
+        'options' => [
+            'https://schema.org/Friday' => 'magiczne.jsonld::lang.enumerations.dayOfWeek.friday',
+            'https://schema.org/Monday' => 'magiczne.jsonld::lang.enumerations.dayOfWeek.monday',
+            'https://schema.org/PublicHolidays' => 'magiczne.jsonld::lang.enumerations.dayOfWeek.publicHolidays',
+            'https://schema.org/Saturday' => 'magiczne.jsonld::lang.enumerations.dayOfWeek.saturday',
+            'https://schema.org/Sunday' => 'magiczne.jsonld::lang.enumerations.dayOfWeek.sunday',
+            'https://schema.org/Thursday' => 'magiczne.jsonld::lang.enumerations.dayOfWeek.thursday',
+            'https://schema.org/Tuesday' => 'magiczne.jsonld::lang.enumerations.dayOfWeek.tuesday',
+            'https://schema.org/Wednesday' => 'magiczne.jsonld::lang.enumerations.dayOfWeek.wednesday',
+            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+        ]
+    ];
+
+    /**
      * https://schema.org/ItemListOrderType
      */
     public static $itemListOrderType = [

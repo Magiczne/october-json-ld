@@ -45,6 +45,7 @@ use Magiczne\JsonLd\Components\Level3\StructuredValue\{ContactPoint,
     GeoShape,
     InteractionCounter,
     MonetaryAmount,
+    OpeningHoursSpecification,
     OwnershipInfo,
     PropertyValue,
     QuantitativeValue};
@@ -63,6 +64,7 @@ use Magiczne\JsonLd\Components\Level3\WebPage\QAPage;
 use Magiczne\JsonLd\Components\Level3\WebPage\SearchResultsPage;
 use Magiczne\JsonLd\Components\Level4\ContactPoint\PostalAddress;
 use Magiczne\JsonLd\Components\Level4\ImageObject\Barcode;
+use Magiczne\JsonLd\Components\Level4\PropertyValue\LocationFeatureSpecification;
 use Magiczne\JsonLd\Components\Thing;
 use System\Classes\PluginBase;
 
@@ -139,6 +141,7 @@ class Plugin extends PluginBase
             GeoShape::class => 'GeoShape',
             InteractionCounter::class => 'InteractionCounter',
             MonetaryAmount::class => 'MonetaryAmount',
+            OpeningHoursSpecification::class => 'OpeningHoursSpecification',
             OwnershipInfo::class => 'OwnershipInfo',
             PropertyValue::class => 'PropertyValue',
             QuantitativeValue::class => 'QuantitativeValue',
@@ -159,7 +162,10 @@ class Plugin extends PluginBase
             PostalAddress::class => 'PostalAddress',
 
             // Level 4 - ImageObject
-            Barcode::class => 'Barcode'
+            Barcode::class => 'Barcode',
+
+            // Level 4 - LocationFeatureSpecification
+            LocationFeatureSpecification::class => 'LocationFeatureSpecification'
         ];
     }
 }

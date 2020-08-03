@@ -54,8 +54,10 @@
       - [GeoShape](https://schema.org/GeoShape)
       - [InteractionCounter](https://schema.org/InteractionCounter)
       - [MonetaryAmount](https://schema.org/MonetaryAmount)
+      - [OpeningHoursSpecification](https://schema.org/OpeningHoursSpecification)
       - [OwnershipInfo](https://schema.org/OwnershipInfo)
       - [PropertyValue](https://schema.org/PropertyValue)
+        - [LocationFeatureSpecification](https://schema.org/LocationFeatureSpecification)
       - [QuantitativeValue](https://schema.org/QuantitativeValue)
   - [MedicalEntity](https://schema.org/MedicalEntity)
   - [Organization](https://schema.org/Organization)
@@ -72,6 +74,7 @@ and these are implemented as dropdown lists in the component fields.
 Here are these enumerations:
 - **_[Enumeration](https://schema.org/Enumeration)_**
   - [ContactPointOption](https://schema.org/ContactPointOption)
+  - [DayOfWeek](https://schema.org/DayOfWeek)
   - [MapCategoryType](https://schema.org/MapCategoryType)
   - [OfferItemCondition](https://schema.org/OfferItemCondition)
   - **_[StatusEnumeration](https://schema.org/StatusEnumeration)_**
