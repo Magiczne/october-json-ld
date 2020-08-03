@@ -8,7 +8,7 @@ This plugin adds component for many of the https://schema.org schemas.
 ### Basic usage example
 
 1. Add component to your layout or page and configure it
-
+![Component configuration](https://github.com/Magiczne/october-json-ld/blob/master/docs/thing_conf_1.png?raw)
 2. Render it using the component syntax
 ```twig
 {% component 'Thing' %}
@@ -45,6 +45,10 @@ To do to you need to use following syntax:
 
 #### Example:
 1. Insert **Thing** and **ImageObject** component to the page and configure them
+
+| ImageObject   | Thing         |
+| ------------- | ------------- |
+| ![Thing component configuration](https://github.com/Magiczne/october-json-ld/blob/master/docs/thing_conf_2.png?raw)  | ![ImageObject component configuration](https://github.com/Magiczne/october-json-ld/blob/master/docs/image_conf.png?raw) |
 
 2. Insert code into your template:
 ```twig
