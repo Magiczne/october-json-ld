@@ -36,6 +36,7 @@ use Magiczne\JsonLd\Components\Level3\MediaObject\{
     VideoObject
 };
 use Magiczne\JsonLd\Components\Level2\Event\PublicationEvent;
+use Magiczne\JsonLd\Components\Level2\Organization\PerformingGroup;
 use Magiczne\JsonLd\Components\Level2\Place\AdministrativeArea;
 use Magiczne\JsonLd\Components\Level2\Product\ProductModel;
 use Magiczne\JsonLd\Components\Level3\Enumeration\ItemListOrderType;
@@ -51,6 +52,9 @@ use Magiczne\JsonLd\Components\Level3\StructuredValue\{ContactPoint,
     QuantitativeValue};
 use Magiczne\JsonLd\Components\Level3\ItemList\BreadcrumbList;
 use Magiczne\JsonLd\Components\Level3\ItemList\OfferCatalog;
+use Magiczne\JsonLd\Components\Level3\PerformingGroup\DanceGroup;
+use Magiczne\JsonLd\Components\Level3\PerformingGroup\MusicGroup;
+use Magiczne\JsonLd\Components\Level3\PerformingGroup\TheaterGroup;
 use Magiczne\JsonLd\Components\Level3\Rating\AggregateRating;
 use Magiczne\JsonLd\Components\Level3\WebPage\AboutPage;
 use Magiczne\JsonLd\Components\Level3\WebPage\CheckoutPage;
@@ -111,6 +115,9 @@ class Plugin extends PluginBase
             SpeakableSpecification::class => 'SpeakableSpecification',
             StructuredValue::class => 'StructuredValue',
 
+            // Level 2 - Organization
+            PerformingGroup::class => 'PerformingGroup',
+
             // Level 2 - Place
             AdministrativeArea::class => 'AdministrativeArea',
 
@@ -131,6 +138,11 @@ class Plugin extends PluginBase
             ImageObject::class => 'ImageObject',
             MusicVideoObject::class => 'MusicVideoObject',
             VideoObject::class => 'VideoObject',
+
+            // Level 3 - PerformingGroup
+            DanceGroup::class => 'DanceGroup',
+            MusicGroup::class => 'MusicGroup',
+            TheaterGroup::class => 'TheaterGroup',
 
             // Level 3 - Rating
             AggregateRating::class => 'AggregateRating',
