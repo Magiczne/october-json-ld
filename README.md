@@ -4,6 +4,8 @@ October CMS JSON-LD components for [schema.org](https://schema.org) with nesting
 ## Information
 This plugin adds component for many of the https://schema.org schemas.
 
+**[List of currently supported schemas and enumerations](SUPPORTED-SCHEMAS.md)**
+
 ## Usage
 ### Basic usage example
 
