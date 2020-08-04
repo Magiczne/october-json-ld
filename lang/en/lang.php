@@ -119,6 +119,12 @@ return [
         'branchCode' => 'Branch code',
         'brand' => 'Brand',
         'breadcrumb' => 'Breadcrumb',
+        'broadcastAffiliateOf' => 'Broadcast affiliate of',
+        'broadcastDisplayName' => 'Broadcast display name',
+        'broadcastFrequency' => 'Broadcast frequency',
+        'broadcastFrequencyValue' => 'Broadcast frequency value',
+        'broadcastTimezone' => 'Broadcast timezone',
+        'broadcaster' => 'Broadcaster',
         'broker' => 'Broker',
 
         'caption' => 'Caption',
@@ -222,6 +228,7 @@ return [
         'gtin8' => 'GTIN-8',
         'guideline' => 'Guideline',
 
+        'hasBroadcastChannel' => 'Has broadcast channel',
         'hasMap' => 'Has map',
         'hasOccupation' => 'Has occupation',
         'hasOfferCatalog' => 'Has offer catalog',
@@ -317,6 +324,7 @@ return [
         'parent' => 'Parent',
         'parentItem' => 'Parent item',
         'parentOrganization' => 'Parent organization',
+        'parentService' => 'Parent service',
         'participant' => 'Participant',
         'partOfEpisode' => 'Part of episode',
         'partOfSeason' => 'Part of season',

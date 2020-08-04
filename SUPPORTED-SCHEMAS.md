@@ -38,6 +38,8 @@
   - **_[Intangible](https://schema.org/Intangible)_**
     - [AlignmentObject](https://schema.org/AlignmentObject)
     - [Brand](https://schema.org/Brand)
+    - [BroadcastChannel](https://schema.org/BroadcastChannel)
+    - [BroadcastFrequencySpecification](https://schema.org/BroadcastFrequencySpecification)
     - [EntryPoint](https://schema.org/EntryPoint)
     - **_[Enumeration](https://schema.org/Enumeration)_**
       - [ItemListOrderType](https://schema.org/ItemListOrderType)
@@ -50,6 +52,8 @@
     - [Rating](https://schema.org/Rating)
       - [AggregateRating](https://schema.org/AggregateRating)
     - [Service](https://schema.org/Service)
+      - [BroadcastService](https://schema.org/BroadcastService)
+      - [CableOrSatelliteService](https://schema.org/CableOrSatelliteService)
     - [ServiceChannel](https://schema.org/ServiceChannel)
     - [SpekableSpecification](https://schema.org/SpekableSpecification)
     - [StructuredValue](https://schema.org/StructuredValue)

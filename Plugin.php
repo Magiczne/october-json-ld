@@ -23,6 +23,8 @@ use Magiczne\JsonLd\Components\Level2\CreativeWork\{Clip,
     WebPageElement};
 use Magiczne\JsonLd\Components\Level2\Intangible\{AlignmentObject,
     Brand,
+    BroadcastChannel,
+    BroadcastFrequencySpecification,
     EntryPoint,
     ItemList,
     ListItem,
@@ -61,6 +63,8 @@ use Magiczne\JsonLd\Components\Level3\PerformingGroup\DanceGroup;
 use Magiczne\JsonLd\Components\Level3\PerformingGroup\MusicGroup;
 use Magiczne\JsonLd\Components\Level3\PerformingGroup\TheaterGroup;
 use Magiczne\JsonLd\Components\Level3\Rating\AggregateRating;
+use Magiczne\JsonLd\Components\Level3\Service\BroadcastService;
+use Magiczne\JsonLd\Components\Level3\Service\CableOrSatelliteService;
 use Magiczne\JsonLd\Components\Level3\WebPage\AboutPage;
 use Magiczne\JsonLd\Components\Level3\WebPage\CheckoutPage;
 use Magiczne\JsonLd\Components\Level3\WebPage\CollectionPage;
@@ -114,6 +118,8 @@ class Plugin extends PluginBase
             // Level 2 - Intangible
             AlignmentObject::class => 'AlignmentObject',
             Brand::class => 'Brand',
+            BroadcastChannel::class => 'BroadcastChannel',
+            BroadcastFrequencySpecification::class => 'BroadcastFrequencySpecification',
             EntryPoint::class => 'EntryPoint',
             ItemList::class => 'ItemList',
             ListItem::class => 'ListItem',
@@ -158,6 +164,10 @@ class Plugin extends PluginBase
 
             // Level 3 - Rating
             AggregateRating::class => 'AggregateRating',
+
+            // Level 3 - Service
+            BroadcastService::class => 'BroadcastService',
+            CableOrSatelliteService::class => 'CableOrSatelliteService',
 
             // Level 3 - Structured Value
             ContactPoint::class => 'ContactPoint',

@@ -1,6 +1,9 @@
 # october-json-ld
 October CMS JSON-LD components for [schema.org](https://schema.org) with nesting support.
 
+Based on schema.org version [9.0](https://schema.org/version/9.0/) **WITHOUT** pending
+schemas and properties.
+
 ## Information
 This plugin adds component for many of the https://schema.org schemas.
 
