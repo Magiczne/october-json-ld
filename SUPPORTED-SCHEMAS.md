@@ -91,6 +91,7 @@
   - [Place](https://schema.org/Place)
     - [AdministrativeArea](https://schema.org/AdministrativeArea)
     - [CivicStructure](https://schema.org/CivicStructure)
+      - [EducationalOrganization](https://schema.org/EducationalOrganization)
   - [Product](https://schema.org/Product)
     - [ProductModel](https://schema.org/ProductModel)
 
