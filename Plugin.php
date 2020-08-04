@@ -14,6 +14,8 @@ use Magiczne\JsonLd\Components\Level2\CreativeWork\{Clip,
     Comment,
     CreativeWorkSeason,
     CreativeWorkSeries,
+    DataCatalog,
+    Dataset,
     Episode,
     Map,
     MediaObject,
@@ -29,6 +31,7 @@ use Magiczne\JsonLd\Components\Level2\Intangible\{AlignmentObject,
     Brand,
     BroadcastChannel,
     BroadcastFrequencySpecification,
+    DataFeedItem,
     Demand,
     EntryPoint,
     ItemList,
@@ -53,6 +56,7 @@ use Magiczne\JsonLd\Components\Level2\Organization\PerformingGroup;
 use Magiczne\JsonLd\Components\Level2\Place\AdministrativeArea;
 use Magiczne\JsonLd\Components\Level2\Product\ProductModel;
 use Magiczne\JsonLd\Components\Level3\Comment\Answer;
+use Magiczne\JsonLd\Components\Level3\Dataset\DataFeed;
 use Magiczne\JsonLd\Components\Level3\Enumeration\ItemListOrderType;
 use Magiczne\JsonLd\Components\Level3\Enumeration\PhysicalActivityCategory;
 use Magiczne\JsonLd\Components\Level3\StructuredValue\{ContactPoint,
@@ -112,6 +116,8 @@ class Plugin extends PluginBase
             Comment::class => 'Comment',
             CreativeWorkSeason::class => 'CreativeWorkSeason',
             CreativeWorkSeries::class => 'CreativeWorkSeries',
+            DataCatalog::class => 'DataCatalog',
+            Dataset::class => 'Dataset',
             Episode::class => 'Episode',
             Map::class => 'Map',
             MediaObject::class => 'MediaObject',
@@ -132,6 +138,7 @@ class Plugin extends PluginBase
             Brand::class => 'Brand',
             BroadcastChannel::class => 'BroadcastChannel',
             BroadcastFrequencySpecification::class => 'BroadcastFrequencySpecification',
+            DataFeedItem::class => 'DataFeedItem',
             Demand::class => 'Demand',
             EntryPoint::class => 'EntryPoint',
             ItemList::class => 'ItemList',
@@ -153,6 +160,9 @@ class Plugin extends PluginBase
 
             // Level 2 - Product
             ProductModel::class => 'ProductModel',
+
+            // Level 3 - Dataset
+            DataFeed::class => 'DataFeed',
 
             // Level 3 - Enumeration
             ItemListOrderType::class => 'ItemListOrderType',

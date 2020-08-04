@@ -10,6 +10,9 @@
       - [Answer](https://schema.org/Answer)
     - [CreativeWorkSeries](https://schema.org/CreativeWorkSeries)
     - [CreativeWorkSeason](https://schema.org/CreativeWorkSeason)
+    - [DataCatalog](https://schema.org/DataCatalog)
+    - [Dataset](https://schema.org/Dataset)
+      - [DataFeed](https://schema.org/DataFeed)
     - [Episode](https://schema.org/Episode)
     - [Map](https://schema.org/Map)
     - [MediaObject](https://schema.org/MediaObject)
@@ -44,6 +47,7 @@
     - [Brand](https://schema.org/Brand)
     - [BroadcastChannel](https://schema.org/BroadcastChannel)
     - [BroadcastFrequencySpecification](https://schema.org/BroadcastFrequencySpecification)
+    - [DataFeedItem](https://schema.org/DataFeedItem)
     - [Demand](https://schema.org/Demand)
     - [EntryPoint](https://schema.org/EntryPoint)
     - **_[Enumeration](https://schema.org/Enumeration)_**
