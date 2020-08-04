@@ -18,6 +18,7 @@
         - [Barcode](https://schema.org/Barcode)
       - [MusicVideoObject](https://schema.org/MusicVideoObject)
       - [VideoObject](https://schema.org/VideoObject)
+    - [MusicRecording](https://schema.org/MusicRecording)
     - [Photograph](https://schema.org/Photograph)
     - [Question](https://schema.org/Question)
     - [Review](https://schema.org/Review)

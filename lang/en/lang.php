@@ -127,6 +127,7 @@ return [
         'broadcastTimezone' => 'Broadcast timezone',
         'broadcaster' => 'Broadcaster',
         'broker' => 'Broker',
+        'byArtist' => 'By artist',
 
         'caption' => 'Caption',
         'category' => 'Category',
@@ -247,7 +248,9 @@ return [
 
         'identifier' => 'Identifier',
         'image' => 'Image',
+        'inAlbum' => 'In album',
         'inLanguage' => 'In language',
+        'inPlaylist' => 'In playlist',
         'instrument' => 'Instrument',
         'interactionService' => 'Interaction service',
         'interactionStatistic' => 'Interaction statistic',
@@ -263,6 +266,7 @@ return [
         'isRelatedTo' => 'Is related to',
         'isSimilarTo' => 'Is similar to',
         'isVariantOf' => 'Is variant of',
+        'isrcCode' => 'International Standard Recording Code',
         'item' => 'Item',
         'itemCondition' => 'Item condition',
         'itemListElement' => 'Item list element',
@@ -367,6 +371,7 @@ return [
         'recognizedAuthority' => 'Recognized authority',
         'recordedAt' => 'Recorded at',
         'recordedIn' => 'Recorded in',
+        'recordingOf' => 'Recording of',
         'regionsAllowed' => 'Regions allowed',
         'relatedLink' => 'Related link',
         'relatedTo' => 'Related to',
