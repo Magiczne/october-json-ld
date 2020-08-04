@@ -7,8 +7,8 @@ class Answer extends Comment
     public function componentDetails()
     {
         return [
-            'name' => 'AudioObject',
-            'description' => 'https://schema.org/AudioObject'
+            'name' => 'Answer',
+            'description' => 'https://schema.org/Answer'
         ];
     }
 }
