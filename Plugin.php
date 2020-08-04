@@ -31,6 +31,7 @@ use Magiczne\JsonLd\Components\Level2\Intangible\{AlignmentObject,
     EntryPoint,
     ItemList,
     ListItem,
+    Occupation,
     Offer,
     ProgramMembership,
     Rating,
@@ -137,6 +138,7 @@ class Plugin extends PluginBase
             ServiceChannel::class => 'ServiceChannel',
             SpeakableSpecification::class => 'SpeakableSpecification',
             StructuredValue::class => 'StructuredValue',
+            Occupation::class => 'Occupation',
             Offer::class => 'Offer',
 
             // Level 2 - Organization
