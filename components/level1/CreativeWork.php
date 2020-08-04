@@ -1,5 +1,6 @@
 <?php namespace Magiczne\JsonLd\Components\Level1;
 
+use Magiczne\JsonLd\Classes\CommonFields;
 use Magiczne\JsonLd\Components\Thing;
 
 class CreativeWork extends Thing
@@ -59,9 +60,9 @@ class CreativeWork extends Thing
             'inLanguage',
             'interactionStatistic',
             'interactivityType',
-            'isAccessibleForFree' => $this->dropdownBoolean,
+            'isAccessibleForFree' => CommonFields::$boolean,
             'isBasedOn',
-            'isFamilyFriendly' => $this->dropdownBoolean,
+            'isFamilyFriendly' => CommonFields::$boolean,
             'isPartOf',
             'keywords',
             'learningResourceType',

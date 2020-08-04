@@ -1,5 +1,6 @@
 <?php namespace Magiczne\JsonLd\Components\Level1;
 
+use Magiczne\JsonLd\Classes\CommonFields;
 use Magiczne\JsonLd\Components\Thing;
 
 class Place extends Thing
@@ -37,7 +38,7 @@ class Place extends Thing
             'geoWithin',
             'globalLocalizationNumber',
             'hasMap',
-            'isAccessibleForFree' => $this->dropdownBoolean,
+            'isAccessibleForFree' => CommonFields::$boolean,
             'isicV4',
             'latitude',
             'logo',
@@ -45,10 +46,10 @@ class Place extends Thing
             'maximumAttendeeCapacity',
             'openingHoursSpecification',
             'photo',
-            'publicAccess' => $this->dropdownBoolean,
+            'publicAccess' => CommonFields::$boolean,
             'review',
             'slogan',
-            'smokingAllowed' => $this->dropdownBoolean,
+            'smokingAllowed' => CommonFields::$boolean,
             'specialOpeningHoursSpecification',
             'telephone'
         ], 'Place'));

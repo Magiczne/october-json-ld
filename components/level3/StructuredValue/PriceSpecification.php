@@ -1,5 +1,6 @@
 <?php namespace Magiczne\JsonLd\Components\Level3\StructuredValue;
 
+use Magiczne\JsonLd\Classes\CommonFields;
 use Magiczne\JsonLd\Components\Level2\Intangible\StructuredValue;
 
 class PriceSpecification extends StructuredValue
@@ -23,7 +24,7 @@ class PriceSpecification extends StructuredValue
             'priceCurrency',
             'validFrom',
             'validThrough',
-            'valueAddedTaxIncluded' => $this->dropdownBoolean
+            'valueAddedTaxIncluded' => CommonFields::$boolean
         ], 'PriceSpecification'));
     }
 }

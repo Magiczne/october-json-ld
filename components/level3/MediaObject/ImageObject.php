@@ -1,5 +1,6 @@
 <?php namespace Magiczne\JsonLd\Components\Level3\MediaObject;
 
+use Magiczne\JsonLd\Classes\CommonFields;
 use Magiczne\JsonLd\Components\Level2\CreativeWork\MediaObject;
 
 class ImageObject extends MediaObject
@@ -17,7 +18,7 @@ class ImageObject extends MediaObject
         return array_merge(parent::defineProperties(), $this->generateProperties([
             'caption',
             'exifData',
-            'representativeOfPage' => $this->dropdownBoolean,
+            'representativeOfPage' => CommonFields::$boolean,
             'thumbnail'
         ], 'ImageObject'));
     }
