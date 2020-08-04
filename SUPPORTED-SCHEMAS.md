@@ -49,6 +49,8 @@
     - [ProgramMembership](https://schema.org/ProgramMembership)
     - [Rating](https://schema.org/Rating)
       - [AggregateRating](https://schema.org/AggregateRating)
+    - [Service](https://schema.org/Service)
+    - [ServiceChannel](https://schema.org/ServiceChannel)
     - [SpekableSpecification](https://schema.org/SpekableSpecification)
     - [StructuredValue](https://schema.org/StructuredValue)
       - [ContactPoint](https://schema.org/ContactPoint)

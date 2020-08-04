@@ -28,6 +28,8 @@ use Magiczne\JsonLd\Components\Level2\Intangible\{AlignmentObject,
     ListItem,
     ProgramMembership,
     Rating,
+    Service,
+    ServiceChannel,
     SpeakableSpecification,
     StructuredValue};
 use Magiczne\JsonLd\Components\Level3\MediaObject\{
@@ -117,6 +119,8 @@ class Plugin extends PluginBase
             ListItem::class => 'ListItem',
             ProgramMembership::class => 'ProgramMembership',
             Rating::class => 'Rating',
+            Service::class => 'Service',
+            ServiceChannel::class => 'ServiceChannel',
             SpeakableSpecification::class => 'SpeakableSpecification',
             StructuredValue::class => 'StructuredValue',
 
