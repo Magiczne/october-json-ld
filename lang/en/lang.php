@@ -68,6 +68,7 @@ return [
     ],
     'properties' => [
         'about' => 'About',
+        'acceptedAnswer' => 'Accepted answer',
         'accessMode' => 'Access mode',
         'accessModeSufficient' => 'Access mode sufficient',
         'accessibilityAPI' => 'Accessibility API',
@@ -98,6 +99,7 @@ return [
         'alumni' => 'Alumni',
         'alumniOf' => 'Alumni of',
         'amenityFeature' => 'Amenity feature',
+        'answerCount' => 'Answer count',
         'areaServed' => 'Area served',
         'associatedArticle' => 'Associated article',
         'associatedMedia' => 'Associated media',
@@ -162,6 +164,7 @@ return [
         'discussionUrl' => 'Discussion URL',
         'dissolutionDate' => 'Dissolution date',
         'doorTime' => 'Door time',
+        'downvoteCount' => 'Downvote count',
         'duns' => 'The Dun & Bradstreet DUNS number',
         'duration' => 'Duration',
 
@@ -310,6 +313,7 @@ return [
         'owns' => 'Owns',
 
         'parent' => 'Parent',
+        'parentItem' => 'Parent item',
         'parentOrganization' => 'Parent organization',
         'participant' => 'Participant',
         'partOfEpisode' => 'Part of episode',
@@ -390,6 +394,7 @@ return [
         'subOrganization' => 'Sub organization',
         'subjectOf' => 'Subject of',
         'successorOf' => 'Successor of',
+        'suggestedAnswer' => 'Suggested answer',
         'superEvent' => 'Super event',
 
         'target' => 'Target',
@@ -414,6 +419,7 @@ return [
         'unitCode' => 'Unit code',
         'unitText' => 'Unit text',
         'uploadDate' => 'Upload date',
+        'upvoteCount' => 'Upvote count',
         'url' => 'URL',
         'urlTemplate' => 'URL template',
         'userInteractionCount' => 'User interaction count',

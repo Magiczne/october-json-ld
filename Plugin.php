@@ -11,11 +11,13 @@ use Magiczne\JsonLd\Components\Level1\{
     Product
 };
 use Magiczne\JsonLd\Components\Level2\CreativeWork\{Clip,
+    Comment,
     CreativeWorkSeason,
     Episode,
     Map,
     MediaObject,
     Photograph,
+    Question,
     Review,
     WebPage,
     WebPageElement};
@@ -39,6 +41,7 @@ use Magiczne\JsonLd\Components\Level2\Event\PublicationEvent;
 use Magiczne\JsonLd\Components\Level2\Organization\PerformingGroup;
 use Magiczne\JsonLd\Components\Level2\Place\AdministrativeArea;
 use Magiczne\JsonLd\Components\Level2\Product\ProductModel;
+use Magiczne\JsonLd\Components\Level3\Comment\Answer;
 use Magiczne\JsonLd\Components\Level3\Enumeration\ItemListOrderType;
 use Magiczne\JsonLd\Components\Level3\Enumeration\PhysicalActivityCategory;
 use Magiczne\JsonLd\Components\Level3\StructuredValue\{ContactPoint,
@@ -92,11 +95,13 @@ class Plugin extends PluginBase
 
             // Level 2 - Creative Work
             Clip::class => 'Clip',
+            Comment::class => 'Comment',
             CreativeWorkSeason::class => 'CreativeWorkSeason',
             Episode::class => 'Episode',
             Map::class => 'Map',
             MediaObject::class => 'MediaObject',
             Photograph::class => 'Photograph',
+            Question::class => 'Question',
             Review::class => 'Review',
             WebPage::class => 'WebPage',
             WebPageElement::class => 'WebPageElement',
@@ -143,6 +148,9 @@ class Plugin extends PluginBase
             DanceGroup::class => 'DanceGroup',
             MusicGroup::class => 'MusicGroup',
             TheaterGroup::class => 'TheaterGroup',
+
+            // Level 3 - Comment
+            Answer::class => 'Answer',
 
             // Level 3 - Rating
             AggregateRating::class => 'AggregateRating',
