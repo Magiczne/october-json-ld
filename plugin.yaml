@@ -5,3 +5,7 @@ plugin:
     author: 'Michał Kleszczyński'
     icon: oc-icon-archive
     homepage: ''
+permissions:
+    magiczne.jsonld.settings:
+        tab: 'magiczne.jsonld::lang.plugin.name'
+        label: 'magiczne.jsonld::lang.permissions.settings'

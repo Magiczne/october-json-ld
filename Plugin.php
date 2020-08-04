@@ -95,7 +95,9 @@ use Magiczne\JsonLd\Components\Level4\ImageObject\Barcode;
 use Magiczne\JsonLd\Components\Level4\PropertyValue\LocationFeatureSpecification;
 use Magiczne\JsonLd\Components\Level4\QuantitativeValueDistribution\MonetaryAmountDistribution;
 use Magiczne\JsonLd\Components\Thing;
+use Magiczne\JsonLd\Models\Settings;
 use System\Classes\PluginBase;
+use System\Classes\SettingsManager;
 
 class Plugin extends PluginBase
 {
@@ -238,6 +240,22 @@ class Plugin extends PluginBase
 
             // Level 4 - QuantitativeValueDistribution
             MonetaryAmountDistribution::class => 'MonetaryAmountDistribution'
+        ];
+    }
+
+    public function registerSettings()
+    {
+        return [
+            'settings' => [
+                'label' => 'magiczne.jsonld::lang.plugin.name',
+                'description' => 'magiczne.jsonld::lang.settings.description',
+                'icon' => 'icon-file-code-o',
+                'category' => SettingsManager::CATEGORY_CMS,
+                'class' => Settings::class,
+                'permissions' => [
+                    'magiczne.jsonld.settings'
+                ]
+            ]
         ];
     }
 }

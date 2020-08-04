@@ -3,7 +3,22 @@
 return [
     'plugin' => [
         'name' => 'JSON-LD Components',
-        'description' => 'Use components to add JSON-LD data to your page.'
+        'description' => 'Use components to add JSON-LD data to your page.',
+    ],
+    'permissions' => [
+        'settings' => 'Manage JSON-LD rendering settings'
+    ],
+    'settings' => [
+        'description' => 'Manage JSON-LD settings',
+        'fields' => [
+            'pretty_print' => [
+                'label' => 'Pretty print JSON',
+                'comment' => 'Display formatted JSON instead of minified'
+            ]
+        ],
+        'tabs' => [
+            'general' => 'General'
+        ]
     ],
     'global' => [
         'yes' => 'Yes',

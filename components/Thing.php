@@ -2,6 +2,7 @@
 
 use Cms\Classes\ComponentBase;
 use Exception;
+use Magiczne\JsonLd\Models\Settings;
 use October\Rain\Support\Arr;
 use October\Rain\Support\Str;
 
@@ -62,11 +63,17 @@ class Thing extends ComponentBase
      */
     public function toJson()
     {
+        $prettyPrint = Settings::get('pretty_print', false);
+
+        $jsonFlags = $prettyPrint
+            ? JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+            : JSON_UNESCAPED_UNICODE;
+
         $jsonArray = array_merge([
             '@context' => 'https://schema.org'
         ], $this->toArray());
 
-        return json_encode($jsonArray, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+        return json_encode($jsonArray, $jsonFlags);
     }
 
     /**

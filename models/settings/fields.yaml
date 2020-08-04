@@ -1,0 +1,8 @@
+tabs:
+    fields:
+        pretty_print:
+            label: magiczne.jsonld::lang.settings.fields.pretty_print.label
+            comment: magiczne.jsonld::lang.settings.fields.pretty_print.comment
+            type: switch
+            default: false
+            tab: magiczne.jsonld::lang.settings.tabs.general
