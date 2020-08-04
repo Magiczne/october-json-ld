@@ -70,7 +70,8 @@ use Magiczne\JsonLd\Components\Level3\StructuredValue\{ContactPoint,
     OwnershipInfo,
     PriceSpecification,
     PropertyValue,
-    QuantitativeValue};
+    QuantitativeValue,
+    QuantitativeValueDistribution};
 use Magiczne\JsonLd\Components\Level3\ItemList\BreadcrumbList;
 use Magiczne\JsonLd\Components\Level3\ItemList\OfferCatalog;
 use Magiczne\JsonLd\Components\Level3\PerformingGroup\DanceGroup;
@@ -92,6 +93,7 @@ use Magiczne\JsonLd\Components\Level3\WebPage\SearchResultsPage;
 use Magiczne\JsonLd\Components\Level4\ContactPoint\PostalAddress;
 use Magiczne\JsonLd\Components\Level4\ImageObject\Barcode;
 use Magiczne\JsonLd\Components\Level4\PropertyValue\LocationFeatureSpecification;
+use Magiczne\JsonLd\Components\Level4\QuantitativeValueDistribution\MonetaryAmountDistribution;
 use Magiczne\JsonLd\Components\Thing;
 use System\Classes\PluginBase;
 
@@ -211,6 +213,7 @@ class Plugin extends PluginBase
             PriceSpecification::class => 'PriceSpecification',
             PropertyValue::class => 'PropertyValue',
             QuantitativeValue::class => 'QuantitativeValue',
+            QuantitativeValueDistribution::class => 'QuantitativeValueDistribution',
 
             // Level 3 - Web Page
             AboutPage::class => 'AboutPage',
@@ -231,7 +234,10 @@ class Plugin extends PluginBase
             Barcode::class => 'Barcode',
 
             // Level 4 - LocationFeatureSpecification
-            LocationFeatureSpecification::class => 'LocationFeatureSpecification'
+            LocationFeatureSpecification::class => 'LocationFeatureSpecification',
+
+            // Level 4 - QuantitativeValueDistribution
+            MonetaryAmountDistribution::class => 'MonetaryAmountDistribution'
         ];
     }
 }

@@ -81,6 +81,8 @@
       - [PropertyValue](https://schema.org/PropertyValue)
         - [LocationFeatureSpecification](https://schema.org/LocationFeatureSpecification)
       - [QuantitativeValue](https://schema.org/QuantitativeValue)
+      - [QuantitativeValueDistribution](https://schema.org/QuantitativeValueDistribution)
+        - [MonetaryAmountDistribution](https://schema.org/MonetaryAmountDistribution)
   - [MedicalEntity](https://schema.org/MedicalEntity)
   - [Organization](https://schema.org/Organization)
     - [PerformingGroup](https://schema.org/PerformingGroup)
