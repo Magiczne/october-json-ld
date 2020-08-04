@@ -22,6 +22,7 @@ use Magiczne\JsonLd\Components\Level2\CreativeWork\{Clip,
     WebPage,
     WebPageElement};
 use Magiczne\JsonLd\Components\Level2\Intangible\{AlignmentObject,
+    Audience,
     Brand,
     BroadcastChannel,
     BroadcastFrequencySpecification,
@@ -117,6 +118,7 @@ class Plugin extends PluginBase
 
             // Level 2 - Intangible
             AlignmentObject::class => 'AlignmentObject',
+            Audience::class => 'Audience',
             Brand::class => 'Brand',
             BroadcastChannel::class => 'BroadcastChannel',
             BroadcastFrequencySpecification::class => 'BroadcastFrequencySpecification',

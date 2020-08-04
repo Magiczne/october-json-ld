@@ -37,6 +37,7 @@
     - [PublicationEvent](https://schema.org/PublicationEvent)
   - **_[Intangible](https://schema.org/Intangible)_**
     - [AlignmentObject](https://schema.org/AlignmentObject)
+    - [Audience](https://schema.org/Audience)
     - [Brand](https://schema.org/Brand)
     - [BroadcastChannel](https://schema.org/BroadcastChannel)
     - [BroadcastFrequencySpecification](https://schema.org/BroadcastFrequencySpecification)

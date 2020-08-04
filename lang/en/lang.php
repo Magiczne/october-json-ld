@@ -108,6 +108,7 @@ return [
         'availableChannel' => 'Available channel',
         'availableLanguage' => 'Available language',
         'award' => 'Award',
+        'audienceType' => 'Audience type',
         'audio' => 'Audio',
         'author' => 'Author',
 
@@ -219,6 +220,7 @@ return [
         'geoOverlaps' => 'Geo overlaps',
         'geoTouches' => 'Geo touches',
         'geoWithin' => 'Geo within',
+        'geographicArea' => 'Geographic area',
         'givenName' => 'Given name',
         'globalLocalizationNumber' => 'Global localization number',
         'globalLocationNumber' => 'Global location number',
