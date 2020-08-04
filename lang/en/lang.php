@@ -324,7 +324,7 @@ return [
         'medicineSystem' => 'Medicine system',
         'member' => 'Member',
         'memberOf' => 'Member of',
-        'membershipNumber' => 'Membership numbe',
+        'membershipNumber' => 'Membership number',
         'mentions' => 'Mentions',
         'minPrice' => 'Min price',
         'minValue' => 'Min value',
