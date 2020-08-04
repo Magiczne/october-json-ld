@@ -69,6 +69,7 @@
       - [MonetaryAmount](https://schema.org/MonetaryAmount)
       - [OpeningHoursSpecification](https://schema.org/OpeningHoursSpecification)
       - [OwnershipInfo](https://schema.org/OwnershipInfo)
+      - [PriceSpecification](https://schema.org/PriceSpecification)
       - [PropertyValue](https://schema.org/PropertyValue)
         - [LocationFeatureSpecification](https://schema.org/LocationFeatureSpecification)
       - [QuantitativeValue](https://schema.org/QuantitativeValue)

@@ -7,6 +7,7 @@ use October\Rain\Support\Str;
 
 class Thing extends ComponentBase
 {
+    // TODO: Move this to helper class
     public $dropdownBoolean = [
         'type' => 'dropdown',
         'default' => 'boolean::no-data',

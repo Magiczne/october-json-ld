@@ -59,6 +59,7 @@ use Magiczne\JsonLd\Components\Level3\StructuredValue\{ContactPoint,
     MonetaryAmount,
     OpeningHoursSpecification,
     OwnershipInfo,
+    PriceSpecification,
     PropertyValue,
     QuantitativeValue};
 use Magiczne\JsonLd\Components\Level3\ItemList\BreadcrumbList;
@@ -185,6 +186,7 @@ class Plugin extends PluginBase
             MonetaryAmount::class => 'MonetaryAmount',
             OpeningHoursSpecification::class => 'OpeningHoursSpecification',
             OwnershipInfo::class => 'OwnershipInfo',
+            PriceSpecification::class => 'PriceSpecification',
             PropertyValue::class => 'PropertyValue',
             QuantitativeValue::class => 'QuantitativeValue',
 
