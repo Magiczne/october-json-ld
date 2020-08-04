@@ -286,6 +286,7 @@ return [
         'isSimilarTo' => 'Is similar to',
         'isVariantOf' => 'Is variant of',
         'isrcCode' => 'International Standard Recording Code',
+        'issn' => 'ISSN',
         'item' => 'Item',
         'itemCondition' => 'Item condition',
         'itemListElement' => 'Item list element',

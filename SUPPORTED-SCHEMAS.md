@@ -8,6 +8,7 @@
     - [Clip](https://schema.org/Clip)
     - [Comment](https://schema.org/Comment)
       - [Answer](https://schema.org/Answer)
+    - [CreativeWorkSeries](https://schema.org/CreativeWorkSeries)
     - [CreativeWorkSeason](https://schema.org/CreativeWorkSeason)
     - [Episode](https://schema.org/Episode)
     - [Map](https://schema.org/Map)
