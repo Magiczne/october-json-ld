@@ -77,7 +77,7 @@ class Thing extends ComponentBase
             '@context' => 'https://schema.org'
         ], $this->toArray());
 
-        return json_encode($jsonArray, JSON_PRETTY_PRINT);
+        return json_encode($jsonArray, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
     }
 
     /**
