@@ -42,6 +42,7 @@
     - [Brand](https://schema.org/Brand)
     - [BroadcastChannel](https://schema.org/BroadcastChannel)
     - [BroadcastFrequencySpecification](https://schema.org/BroadcastFrequencySpecification)
+    - [Demand](https://schema.org/Demand)
     - [EntryPoint](https://schema.org/EntryPoint)
     - **_[Enumeration](https://schema.org/Enumeration)_**
       - [ItemListOrderType](https://schema.org/ItemListOrderType)
