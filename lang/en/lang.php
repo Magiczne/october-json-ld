@@ -361,6 +361,7 @@ return [
         'occupationLocation' => 'Occupation location',
         'offeredBy' => 'Offered by',
         'offers' => 'Offers',
+        'openingHours' => 'Opening hours',
         'openingHoursSpecification' => 'Opening hours specification',
         'opens' => 'Opens',
         'operatingSystem' => 'Operating system',

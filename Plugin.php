@@ -54,6 +54,7 @@ use Magiczne\JsonLd\Components\Level3\MediaObject\{
 use Magiczne\JsonLd\Components\Level2\Event\PublicationEvent;
 use Magiczne\JsonLd\Components\Level2\Organization\PerformingGroup;
 use Magiczne\JsonLd\Components\Level2\Place\AdministrativeArea;
+use Magiczne\JsonLd\Components\Level2\Place\CivicStructure;
 use Magiczne\JsonLd\Components\Level2\Product\ProductModel;
 use Magiczne\JsonLd\Components\Level3\Comment\Answer;
 use Magiczne\JsonLd\Components\Level3\Dataset\DataFeed;
@@ -157,6 +158,7 @@ class Plugin extends PluginBase
 
             // Level 2 - Place
             AdministrativeArea::class => 'AdministrativeArea',
+            CivicStructure::class => 'CivicStructure',
 
             // Level 2 - Product
             ProductModel::class => 'ProductModel',
