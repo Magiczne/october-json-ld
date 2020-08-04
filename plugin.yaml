@@ -1,10 +1,10 @@
 plugin:
-    code: 'Magiczne.JsonLd'
+    code: Magiczne.JsonLd
     name: 'magiczne.jsonld::lang.plugin.name'
     description: 'magiczne.jsonld::lang.plugin.description'
     author: 'Michał Kleszczyński'
     icon: oc-icon-archive
-    homepage: ''
+    homepage: 'https://github.com/Magiczne/october-json-ld'
 permissions:
     magiczne.jsonld.settings:
         tab: 'magiczne.jsonld::lang.plugin.name'
