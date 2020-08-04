@@ -53,6 +53,7 @@
     - **_[Enumeration](https://schema.org/Enumeration)_**
       - [ItemListOrderType](https://schema.org/ItemListOrderType)
       - [PhysicalActivityCategory](https://schema.org/PhysicalActivityCategory)
+      - **_[Specialty](https://schema.org/Specialty)_**
     - [ItemList](https://schema.org/ItemList)
       - [BreadcrumbList](https://schema.org/BreadcrumbList)
       - [OfferCatalog](https://schema.org/OfferCatalog)
