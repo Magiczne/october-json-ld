@@ -4,3 +4,5 @@
     - Added Answer, Comment and Question
     - Added Service, BroadcastService, CableOrSatelliteService
     - Added BroadcastChannel, BroadcastFrequencySpecification, ServiceChannel
+1.0.3:
+    - Added various components. See github releases page for details.
