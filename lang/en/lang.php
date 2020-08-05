@@ -147,6 +147,7 @@ return [
         'alumniOf' => 'Alumni of',
         'amenityFeature' => 'Amenity feature',
         'answerCount' => 'Answer count',
+        'applicableLocation' => 'Applicable location',
         'applicationCategory' => 'Application category',
         'applicationSubCategory' => 'Application sub category',
         'applicationSuite' => 'Application suite',

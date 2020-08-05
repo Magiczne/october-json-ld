@@ -77,6 +77,7 @@ use Magiczne\JsonLd\Components\Level3\StructuredValue\{ContactPoint,
     QuantitativeValueDistribution};
 use Magiczne\JsonLd\Components\Level3\ItemList\BreadcrumbList;
 use Magiczne\JsonLd\Components\Level3\ItemList\OfferCatalog;
+use Magiczne\JsonLd\Components\Level3\MedicalIntangible\DrugLegalStatus;
 use Magiczne\JsonLd\Components\Level3\PerformingGroup\DanceGroup;
 use Magiczne\JsonLd\Components\Level3\PerformingGroup\MusicGroup;
 use Magiczne\JsonLd\Components\Level3\PerformingGroup\TheaterGroup;
@@ -201,6 +202,9 @@ class Plugin extends PluginBase
             ImageObject::class => 'ImageObject',
             MusicVideoObject::class => 'MusicVideoObject',
             VideoObject::class => 'VideoObject',
+
+            // Level 3 - MedicalIntangible
+            DrugLegalStatus::class => 'DrugLegalStatus',
 
             // Level 3 - PerformingGroup
             DanceGroup::class => 'DanceGroup',
