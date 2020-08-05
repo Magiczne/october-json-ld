@@ -90,6 +90,7 @@
         - [MonetaryAmountDistribution](https://schema.org/MonetaryAmountDistribution)
   - [MedicalEntity](https://schema.org/MedicalEntity)
     - [MedicalGuideline](https://schema.org/MedicalGuideline)
+    - **_[MedicalIntangible](https://schema.org/MedicalIntangible)_**
     - [MedicalStudy](https://schema.org/MedicalStudy)
   - [Organization](https://schema.org/Organization)
     - [PerformingGroup](https://schema.org/PerformingGroup)
