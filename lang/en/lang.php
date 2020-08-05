@@ -65,6 +65,10 @@ return [
             'transitMap' => 'Transit map',
             'venueMap' => 'Venue map'
         ],
+        'medicalAudienceType' => [
+            'clinician' => 'Clinician',
+            'medicalResearcher' => 'Medical researcher'
+        ],
         'offerItemCondition' => [
             'damagedCondition' => 'Damaged',
             'newCondition' => 'New',
