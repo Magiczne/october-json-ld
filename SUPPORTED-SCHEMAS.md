@@ -45,6 +45,7 @@
     - [AlignmentObject](https://schema.org/AlignmentObject)
     - [Audience](https://schema.org/Audience)
       - [PeopleAudience](https://schema.org/PeopleAudience)
+        - [MedicalAudience](https://schema.org/MedicalAudience)
     - [Brand](https://schema.org/Brand)
     - [BroadcastChannel](https://schema.org/BroadcastChannel)
     - [BroadcastFrequencySpecification](https://schema.org/BroadcastFrequencySpecification)

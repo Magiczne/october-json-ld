@@ -93,6 +93,7 @@ use Magiczne\JsonLd\Components\Level3\WebPage\QAPage;
 use Magiczne\JsonLd\Components\Level3\WebPage\SearchResultsPage;
 use Magiczne\JsonLd\Components\Level4\ContactPoint\PostalAddress;
 use Magiczne\JsonLd\Components\Level4\ImageObject\Barcode;
+use Magiczne\JsonLd\Components\Level4\PeopleAudience\MedicalAudience;
 use Magiczne\JsonLd\Components\Level4\PropertyValue\LocationFeatureSpecification;
 use Magiczne\JsonLd\Components\Level4\QuantitativeValueDistribution\MonetaryAmountDistribution;
 use Magiczne\JsonLd\Components\Thing;
@@ -241,6 +242,9 @@ class Plugin extends PluginBase
 
             // Level 4 - LocationFeatureSpecification
             LocationFeatureSpecification::class => 'LocationFeatureSpecification',
+
+            // Level 4 - PeopleAudience
+            MedicalAudience::class => 'MedicalAudience',
 
             // Level 4 - QuantitativeValueDistribution
             MonetaryAmountDistribution::class => 'MonetaryAmountDistribution'
