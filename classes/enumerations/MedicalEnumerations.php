@@ -35,4 +35,21 @@ class MedicalEnumerations
             'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
         ]
     ];
+
+    /**
+     * https://schema.org/MedicineSystem
+     */
+    public static $medicineSystem = [
+        'type' => 'dropdown',
+        'default' => 'enum::no-data',
+        'options' => [
+            'https://schema.org/Ayurvedic' => 'magiczne.jsonld::lang.enumerations.medicineSystem.ayurvedic',
+            'https://schema.org/Chiropractic' => 'magiczne.jsonld::lang.enumerations.medicineSystem.chiropractic',
+            'https://schema.org/Homeopathic' => 'magiczne.jsonld::lang.enumerations.medicineSystem.homeopathic',
+            'https://schema.org/Osteopathic' => 'magiczne.jsonld::lang.enumerations.medicineSystem.osteopathic',
+            'https://schema.org/TraditionalChinese' => 'magiczne.jsonld::lang.enumerations.medicineSystem.traditionalChinese',
+            'https://schema.org/WesternConventional' => 'magiczne.jsonld::lang.enumerations.medicineSystem.westernConventional',
+            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+        ]
+    ];
 }

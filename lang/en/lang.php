@@ -79,7 +79,15 @@ return [
             'resultsNotAvailable' => 'Results not available',
             'suspended' => 'Suspended',
             'terminated' => 'Terminated',
-            'withdrawn' => 'Withdrawn',
+            'withdrawn' => 'Withdrawn'
+        ],
+        'medicineSystem' => [
+            'ayurvedic' => 'Ayurvedic',
+            'chiropractic' => 'Chiropractic',
+            'homeopathic' => 'Homeopathic',
+            'osteopathic' => 'Osteopathic',
+            'traditionalChinese' => 'Traditional chinese',
+            'westernConventional' => 'Western conventional'
         ],
         'offerItemCondition' => [
             'damagedCondition' => 'Damaged',
