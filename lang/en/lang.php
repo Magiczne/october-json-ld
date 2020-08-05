@@ -268,6 +268,8 @@ return [
         'estimatedSalary' => 'Estimated salary',
         'event' => 'Event',
         'eventStatus' => 'Event status',
+        'evidenceLevel' => 'Evidence level',
+        'evidenceOrigin' => 'Evidence origin',
         'exampleOfWork' => 'Example of work',
         'exifData' => 'EXIF data',
         'experienceRequirements' => 'Experience requiremets',
@@ -304,6 +306,8 @@ return [
         'gtin14' => 'GTIN-14',
         'gtin8' => 'GTIN-8',
         'guideline' => 'Guideline',
+        'guidelineDate' => 'Guideline date',
+        'guidelineSubject' => 'Guideline subject',
 
         'hasBroadcastChannel' => 'Has broadcast channel',
         'hasMap' => 'Has map',
