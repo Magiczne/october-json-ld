@@ -54,6 +54,7 @@
     - [EntryPoint](https://schema.org/EntryPoint)
     - **_[Enumeration](https://schema.org/Enumeration)_**
       - [ItemListOrderType](https://schema.org/ItemListOrderType)
+      - **_[MedicalEnumeration](https://schema.org/MedicalEnumeration)_**
       - [PhysicalActivityCategory](https://schema.org/PhysicalActivityCategory)
       - **_[Specialty](https://schema.org/Specialty)_**
     - [ItemList](https://schema.org/ItemList)
