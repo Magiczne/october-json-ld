@@ -69,6 +69,18 @@ return [
             'clinician' => 'Clinician',
             'medicalResearcher' => 'Medical researcher'
         ],
+        'medicalStudyStatus' => [
+            'activeNotRecruiting' => 'Active not recruiting',
+            'completed' => 'Completed',
+            'enrollingByInvitation' => 'Enrolling by invitation',
+            'notYetRecruiting' => 'Not yet recruiting',
+            'recruiting' => 'Recruiting',
+            'resultsAvailable' => 'Results available',
+            'resultsNotAvailable' => 'Results not available',
+            'suspended' => 'Suspended',
+            'terminated' => 'Terminated',
+            'withdrawn' => 'Withdrawn',
+        ],
         'offerItemCondition' => [
             'damagedCondition' => 'Damaged',
             'newCondition' => 'New',

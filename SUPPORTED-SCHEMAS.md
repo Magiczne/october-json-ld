@@ -56,6 +56,7 @@
       - [ItemListOrderType](https://schema.org/ItemListOrderType)
       - **_[MedicalEnumeration](https://schema.org/MedicalEnumeration)_**
         - [MedicalAudienceType](https://schema.org/MedicalAudienceType)
+        - [MedicalStudyStatus](https://schema.org/MedicalStudyStatus)
       - [PhysicalActivityCategory](https://schema.org/PhysicalActivityCategory)
       - **_[Specialty](https://schema.org/Specialty)_**
     - [ItemList](https://schema.org/ItemList)

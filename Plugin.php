@@ -94,6 +94,7 @@ use Magiczne\JsonLd\Components\Level3\WebPage\SearchResultsPage;
 use Magiczne\JsonLd\Components\Level4\ContactPoint\PostalAddress;
 use Magiczne\JsonLd\Components\Level4\ImageObject\Barcode;
 use Magiczne\JsonLd\Components\Level4\MedicalEnumeration\MedicalAudienceType;
+use Magiczne\JsonLd\Components\Level4\MedicalEnumeration\MedicalStudyStatus;
 use Magiczne\JsonLd\Components\Level4\PeopleAudience\MedicalAudience;
 use Magiczne\JsonLd\Components\Level4\PropertyValue\LocationFeatureSpecification;
 use Magiczne\JsonLd\Components\Level4\QuantitativeValueDistribution\MonetaryAmountDistribution;
@@ -243,6 +244,7 @@ class Plugin extends PluginBase
 
             // Level 4 - MedicalEnumeration
             MedicalAudienceType::class => 'MedicalAudienceType',
+            MedicalStudyStatus::class => 'MedicalStudyStatus',
 
             // Level 4 - LocationFeatureSpecification
             LocationFeatureSpecification::class => 'LocationFeatureSpecification',
