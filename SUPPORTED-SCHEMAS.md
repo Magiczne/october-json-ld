@@ -89,6 +89,7 @@
       - [QuantitativeValueDistribution](https://schema.org/QuantitativeValueDistribution)
         - [MonetaryAmountDistribution](https://schema.org/MonetaryAmountDistribution)
   - [MedicalEntity](https://schema.org/MedicalEntity)
+    - [MedicalStudy](https://schema.org/MedicalStudy)
   - [Organization](https://schema.org/Organization)
     - [PerformingGroup](https://schema.org/PerformingGroup)
         - [DanceGroup](https://schema.org/DanceGroup)

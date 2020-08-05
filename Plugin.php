@@ -52,6 +52,7 @@ use Magiczne\JsonLd\Components\Level3\MediaObject\{
     VideoObject
 };
 use Magiczne\JsonLd\Components\Level2\Event\PublicationEvent;
+use Magiczne\JsonLd\Components\Level2\MedicalEntity\MedicalStudy;
 use Magiczne\JsonLd\Components\Level2\Organization\PerformingGroup;
 use Magiczne\JsonLd\Components\Level2\Place\AdministrativeArea;
 use Magiczne\JsonLd\Components\Level2\Place\CivicStructure;
@@ -161,6 +162,9 @@ class Plugin extends PluginBase
             StructuredValue::class => 'StructuredValue',
             Occupation::class => 'Occupation',
             Offer::class => 'Offer',
+
+            // Level 2 - MedicalEntity
+            MedicalStudy::class => 'MedicalStudy',
 
             // Level 2 - Organization
             PerformingGroup::class => 'PerformingGroup',
