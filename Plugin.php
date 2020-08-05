@@ -56,6 +56,7 @@ use Magiczne\JsonLd\Components\Level2\Organization\PerformingGroup;
 use Magiczne\JsonLd\Components\Level2\Place\AdministrativeArea;
 use Magiczne\JsonLd\Components\Level2\Place\CivicStructure;
 use Magiczne\JsonLd\Components\Level2\Product\ProductModel;
+use Magiczne\JsonLd\Components\Level3\Audience\PeopleAudience;
 use Magiczne\JsonLd\Components\Level3\CivicStructure\EducationalOrganization;
 use Magiczne\JsonLd\Components\Level3\Comment\Answer;
 use Magiczne\JsonLd\Components\Level3\Dataset\DataFeed;
@@ -167,6 +168,9 @@ class Plugin extends PluginBase
 
             // Level 2 - Product
             ProductModel::class => 'ProductModel',
+
+            // Level 3 - Audience
+            PeopleAudience::class => 'PeopleAudience',
 
             // Level 3 - CivicStructure
             EducationalOrganization::class => 'EducationalOrganization',
