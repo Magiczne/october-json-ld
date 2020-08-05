@@ -16,6 +16,20 @@ class MedicalEnumerations
     ];
 
     /**
+     * https://schema.org/MedicalEvidenceLevel
+     */
+    public static $medicalEvidenceLevel = [
+        'type' => 'dropdown',
+        'default' => 'enum::no-data',
+        'options' => [
+            'https://schema.org/EvidenceLevelA' => 'magiczne.jsonld::lang.enumerations.medicalEvidenceLevel.evidenceLevelA',
+            'https://schema.org/EvidenceLevelB' => 'magiczne.jsonld::lang.enumerations.medicalEvidenceLevel.evidenceLevelB',
+            'https://schema.org/EvidenceLevelC' => 'magiczne.jsonld::lang.enumerations.medicalEvidenceLevel.evidenceLevelC',
+            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+        ]
+    ];
+
+    /**
      * https://schema.org/MedicalStudyStatus
      */
     public static $medicalStudyStatus = [

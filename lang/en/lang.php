@@ -69,6 +69,11 @@ return [
             'clinician' => 'Clinician',
             'medicalResearcher' => 'Medical researcher'
         ],
+        'medicalEvidenceLevel' => [
+            'evidenceLevelA' => 'Level A',
+            'evidenceLevelB' => 'Level B',
+            'evidenceLevelC' => 'Level C'
+        ],
         'medicalStudyStatus' => [
             'activeNotRecruiting' => 'Active not recruiting',
             'completed' => 'Completed',

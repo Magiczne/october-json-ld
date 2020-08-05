@@ -113,6 +113,7 @@ Here are these enumerations:
   - [DayOfWeek](https://schema.org/DayOfWeek)
   - [MapCategoryType](https://schema.org/MapCategoryType)
   - **_[MedicalEnumeration](https://schema.org/MedicalEnumeration)_**
+    - [MedicalEvidenceLevel](https://schema.org/MedicalEvidenceLevel)
     - [MedicineSystem](https://schema.org/MedicineSystem)
   - [OfferItemCondition](https://schema.org/OfferItemCondition)
   - **_[StatusEnumeration](https://schema.org/StatusEnumeration)_**
