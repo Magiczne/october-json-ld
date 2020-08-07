@@ -52,10 +52,14 @@ use Magiczne\JsonLd\Components\Level3\MediaObject\{
     VideoObject
 };
 use Magiczne\JsonLd\Components\Level2\Event\PublicationEvent;
+use Magiczne\JsonLd\Components\Level2\MedicalEntity\MedicalCondition;
+use Magiczne\JsonLd\Components\Level2\MedicalEntity\MedicalGuideline;
+use Magiczne\JsonLd\Components\Level2\MedicalEntity\MedicalStudy;
 use Magiczne\JsonLd\Components\Level2\Organization\PerformingGroup;
 use Magiczne\JsonLd\Components\Level2\Place\AdministrativeArea;
 use Magiczne\JsonLd\Components\Level2\Place\CivicStructure;
 use Magiczne\JsonLd\Components\Level2\Product\ProductModel;
+use Magiczne\JsonLd\Components\Level3\Audience\PeopleAudience;
 use Magiczne\JsonLd\Components\Level3\CivicStructure\EducationalOrganization;
 use Magiczne\JsonLd\Components\Level3\Comment\Answer;
 use Magiczne\JsonLd\Components\Level3\Dataset\DataFeed;
@@ -74,6 +78,7 @@ use Magiczne\JsonLd\Components\Level3\StructuredValue\{ContactPoint,
     QuantitativeValueDistribution};
 use Magiczne\JsonLd\Components\Level3\ItemList\BreadcrumbList;
 use Magiczne\JsonLd\Components\Level3\ItemList\OfferCatalog;
+use Magiczne\JsonLd\Components\Level3\MedicalIntangible\DrugLegalStatus;
 use Magiczne\JsonLd\Components\Level3\PerformingGroup\DanceGroup;
 use Magiczne\JsonLd\Components\Level3\PerformingGroup\MusicGroup;
 use Magiczne\JsonLd\Components\Level3\PerformingGroup\TheaterGroup;
@@ -92,6 +97,9 @@ use Magiczne\JsonLd\Components\Level3\WebPage\QAPage;
 use Magiczne\JsonLd\Components\Level3\WebPage\SearchResultsPage;
 use Magiczne\JsonLd\Components\Level4\ContactPoint\PostalAddress;
 use Magiczne\JsonLd\Components\Level4\ImageObject\Barcode;
+use Magiczne\JsonLd\Components\Level4\MedicalEnumeration\MedicalAudienceType;
+use Magiczne\JsonLd\Components\Level4\MedicalEnumeration\MedicalStudyStatus;
+use Magiczne\JsonLd\Components\Level4\PeopleAudience\MedicalAudience;
 use Magiczne\JsonLd\Components\Level4\PropertyValue\LocationFeatureSpecification;
 use Magiczne\JsonLd\Components\Level4\QuantitativeValueDistribution\MonetaryAmountDistribution;
 use Magiczne\JsonLd\Components\Thing;
@@ -158,6 +166,11 @@ class Plugin extends PluginBase
             Occupation::class => 'Occupation',
             Offer::class => 'Offer',
 
+            // Level 2 - MedicalEntity
+            MedicalCondition::class => 'MedicalCondition',
+            MedicalGuideline::class => 'MedicalGuideline',
+            MedicalStudy::class => 'MedicalStudy',
+
             // Level 2 - Organization
             PerformingGroup::class => 'PerformingGroup',
 
@@ -167,6 +180,9 @@ class Plugin extends PluginBase
 
             // Level 2 - Product
             ProductModel::class => 'ProductModel',
+
+            // Level 3 - Audience
+            PeopleAudience::class => 'PeopleAudience',
 
             // Level 3 - CivicStructure
             EducationalOrganization::class => 'EducationalOrganization',
@@ -188,6 +204,9 @@ class Plugin extends PluginBase
             ImageObject::class => 'ImageObject',
             MusicVideoObject::class => 'MusicVideoObject',
             VideoObject::class => 'VideoObject',
+
+            // Level 3 - MedicalIntangible
+            DrugLegalStatus::class => 'DrugLegalStatus',
 
             // Level 3 - PerformingGroup
             DanceGroup::class => 'DanceGroup',
@@ -235,8 +254,15 @@ class Plugin extends PluginBase
             // Level 4 - ImageObject
             Barcode::class => 'Barcode',
 
+            // Level 4 - MedicalEnumeration
+            MedicalAudienceType::class => 'MedicalAudienceType',
+            MedicalStudyStatus::class => 'MedicalStudyStatus',
+
             // Level 4 - LocationFeatureSpecification
             LocationFeatureSpecification::class => 'LocationFeatureSpecification',
+
+            // Level 4 - PeopleAudience
+            MedicalAudience::class => 'MedicalAudience',
 
             // Level 4 - QuantitativeValueDistribution
             MonetaryAmountDistribution::class => 'MonetaryAmountDistribution'

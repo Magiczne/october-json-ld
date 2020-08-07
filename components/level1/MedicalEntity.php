@@ -1,5 +1,6 @@
 <?php namespace Magiczne\JsonLd\Components\Level1;
 
+use Magiczne\JsonLd\Classes\Enumerations\MedicalEnumerations;
 use Magiczne\JsonLd\Components\Thing;
 
 class MedicalEntity extends Thing
@@ -18,7 +19,7 @@ class MedicalEntity extends Thing
             'code',
             'guideline',
             'legalStatus',
-            'medicineSystem',
+            'medicineSystem' => MedicalEnumerations::$medicineSystem,
             'recognizedAuthority',
             'relevantSpecialty',
             'study'

@@ -6,3 +6,5 @@
     - Added BroadcastChannel, BroadcastFrequencySpecification, ServiceChannel
 1.0.3:
     - Added various components. See github releases page for details.
+1.0.4:
+    - Added plugin settings and a few components. See github page for details.

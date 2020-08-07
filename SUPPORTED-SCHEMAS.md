@@ -44,6 +44,8 @@
   - **_[Intangible](https://schema.org/Intangible)_**
     - [AlignmentObject](https://schema.org/AlignmentObject)
     - [Audience](https://schema.org/Audience)
+      - [PeopleAudience](https://schema.org/PeopleAudience)
+        - [MedicalAudience](https://schema.org/MedicalAudience)
     - [Brand](https://schema.org/Brand)
     - [BroadcastChannel](https://schema.org/BroadcastChannel)
     - [BroadcastFrequencySpecification](https://schema.org/BroadcastFrequencySpecification)
@@ -52,6 +54,9 @@
     - [EntryPoint](https://schema.org/EntryPoint)
     - **_[Enumeration](https://schema.org/Enumeration)_**
       - [ItemListOrderType](https://schema.org/ItemListOrderType)
+      - **_[MedicalEnumeration](https://schema.org/MedicalEnumeration)_**
+        - [MedicalAudienceType](https://schema.org/MedicalAudienceType)
+        - [MedicalStudyStatus](https://schema.org/MedicalStudyStatus)
       - [PhysicalActivityCategory](https://schema.org/PhysicalActivityCategory)
       - **_[Specialty](https://schema.org/Specialty)_**
     - [ItemList](https://schema.org/ItemList)
@@ -84,6 +89,11 @@
       - [QuantitativeValueDistribution](https://schema.org/QuantitativeValueDistribution)
         - [MonetaryAmountDistribution](https://schema.org/MonetaryAmountDistribution)
   - [MedicalEntity](https://schema.org/MedicalEntity)
+    - [MedicalCondition](https://schema.org/MedicalCondition)
+    - [MedicalGuideline](https://schema.org/MedicalGuideline)
+    - **_[MedicalIntangible](https://schema.org/MedicalIntangible)_**
+      - [DrugLegalStatus](https://schema.org/DrugLegalStatus)
+    - [MedicalStudy](https://schema.org/MedicalStudy)
   - [Organization](https://schema.org/Organization)
     - [PerformingGroup](https://schema.org/PerformingGroup)
         - [DanceGroup](https://schema.org/DanceGroup)
@@ -106,6 +116,9 @@ Here are these enumerations:
   - [ContactPointOption](https://schema.org/ContactPointOption)
   - [DayOfWeek](https://schema.org/DayOfWeek)
   - [MapCategoryType](https://schema.org/MapCategoryType)
+  - **_[MedicalEnumeration](https://schema.org/MedicalEnumeration)_**
+    - [MedicalEvidenceLevel](https://schema.org/MedicalEvidenceLevel)
+    - [MedicineSystem](https://schema.org/MedicineSystem)
   - [OfferItemCondition](https://schema.org/OfferItemCondition)
   - **_[StatusEnumeration](https://schema.org/StatusEnumeration)_**
     - [ActionStatusType](https://schema.org/ActionStatusType)
