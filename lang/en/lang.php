@@ -218,6 +218,7 @@ return [
         'byArtist' => 'By artist',
 
         'caption' => 'Caption',
+        'catalogNumber' => 'Catalog number',
         'category' => 'Category',
         'character' => 'Character',
         'children' => 'Children',
@@ -247,6 +248,7 @@ return [
         'countriesNotSupported' => 'Countries not supported',
         'countriesSupported' => 'Countries supported',
         'creator' => 'Creator',
+        'creditedTo' => 'Credited to',
         'cssSelector' => 'CSS Selector',
         'currency' => 'Currency',
 
@@ -439,6 +441,7 @@ return [
         'musicArrangement' => 'Music arrangement',
         'musicBy' => 'Music by',
         'musicCompositionForm' => 'Music composition form',
+        'musicReleaseFormat' => 'Music release format',
         'musicalKey' => 'Musical key',
 
         'naics' => 'NAICS Code',
@@ -521,6 +524,7 @@ return [
         'ratingCount' => 'Rating count',
         'ratingValue' => 'Rating value',
         'recognizedAuthority' => 'Recognized authority',
+        'recordLabel' => 'Record label',
         'recordedAs' => 'Recorded as',
         'recordedAt' => 'Recorded at',
         'recordedIn' => 'Recorded in',
@@ -530,6 +534,7 @@ return [
         'relatedTo' => 'Related to',
         'releaseDate' => 'Release date',
         'releaseNotes' => 'Release notes',
+        'releaseOf' => 'Release of',
         'releasedEvent' => 'Released event',
         'relevantSpecialty' => 'Relevant specialty',
         'remainingAttendeeCapacity' => 'Remaining attendee capacity',

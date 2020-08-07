@@ -25,6 +25,7 @@
     - [MusicComposition](https://schema.org/MusicComposition)
     - [MusicPlaylist](https://schema.org/MusicPlaylist)
       - [MusicAlbum](https://schema.org/MusicAlbum)
+      - [MusicRelease](https://schema.org/MusicRelease)
     - [MusicRecording](https://schema.org/MusicRecording)
     - [Photograph](https://schema.org/Photograph)
     - [Question](https://schema.org/Question)
