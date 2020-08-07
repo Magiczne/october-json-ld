@@ -410,6 +410,7 @@ return [
         'naturalProgression' => 'Natural progression',
         'netWorth' => 'Net worth',
         'nextItem' => 'Next item',
+        'numTracks' => 'Number of tracks',
         'numberOfEmployees' => 'Number of employees',
         'numberOfEpisodes' => 'Number of episodes',
         'numberOfItems' => 'Number of items',
