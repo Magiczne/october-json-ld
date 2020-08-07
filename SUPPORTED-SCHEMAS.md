@@ -22,6 +22,7 @@
         - [Barcode](https://schema.org/Barcode)
       - [MusicVideoObject](https://schema.org/MusicVideoObject)
       - [VideoObject](https://schema.org/VideoObject)
+    - [MusicComposition](https://schema.org/MusicComposition)
     - [MusicPlaylist](https://schema.org/MusicPlaylist)
     - [MusicRecording](https://schema.org/MusicRecording)
     - [Photograph](https://schema.org/Photograph)
