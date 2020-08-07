@@ -1,5 +1,6 @@
 <?php namespace Magiczne\JsonLd\Components\Level3\MusicPlaylist;
 
+use Magiczne\JsonLd\Classes\Enumerations\Enumerations;
 use Magiczne\JsonLd\Components\Level2\CreativeWork\MusicPlaylist;
 
 class MusicAlbum extends MusicPlaylist
@@ -15,7 +16,7 @@ class MusicAlbum extends MusicPlaylist
     public function defineProperties()
     {
         return array_merge(parent::defineProperties(), $this->generateProperties([
-            'albumProductionType',
+            'albumProductionType' => Enumerations::$musicAlbumProductionType,
             'albumRelease',
             'albumReleaseType',
             'byArtist'

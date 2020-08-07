@@ -94,6 +94,17 @@ return [
             'traditionalChinese' => 'Traditional chinese',
             'westernConventional' => 'Western conventional'
         ],
+        'musicAlbumProductionType' => [
+            'compilationAlbum' => 'Compilation album',
+            'dJMixAlbum' => 'DJ mix album',
+            'demoAlbum' => 'Demo album',
+            'liveAlbum' => 'Live album',
+            'mixtapeAlbum' => 'Mixtape album',
+            'remixAlbum' => 'Remix album',
+            'soundtrackAlbum' => 'Soundtrack album',
+            'spokenWordAlbum' => 'Spoken word album',
+            'studioAlbum' => 'Studio album'
+        ],
         'offerItemCondition' => [
             'damagedCondition' => 'Damaged',
             'newCondition' => 'New',

@@ -122,6 +122,7 @@ Here are these enumerations:
   - **_[MedicalEnumeration](https://schema.org/MedicalEnumeration)_**
     - [MedicalEvidenceLevel](https://schema.org/MedicalEvidenceLevel)
     - [MedicineSystem](https://schema.org/MedicineSystem)
+  - [MusicAlbumProductionType](https://schema.org/MusicAlbumProductionType)
   - [OfferItemCondition](https://schema.org/OfferItemCondition)
   - **_[StatusEnumeration](https://schema.org/StatusEnumeration)_**
     - [ActionStatusType](https://schema.org/ActionStatusType)

@@ -64,6 +64,26 @@ class Enumerations
     ];
 
     /**
+     * https://schema.org/MusicAlbumProductionType
+     */
+    public static $musicAlbumProductionType = [
+        'type' => 'dropdown',
+        'default' => 'enum::no-data',
+        'options' => [
+            'https://schema.org/CompilationAlbum' => 'magiczne.jsonld::lang.enumerations.musicAlbumProductionType.compilationAlbum',
+            'https://schema.org/DJMixAlbum' => 'magiczne.jsonld::lang.enumerations.musicAlbumProductionType.dJMixAlbum',
+            'https://schema.org/DemoAlbum' => 'magiczne.jsonld::lang.enumerations.musicAlbumProductionType.demoAlbum',
+            'https://schema.org/LiveAlbum' => 'magiczne.jsonld::lang.enumerations.musicAlbumProductionType.liveAlbum',
+            'https://schema.org/MixtapeAlbum' => 'magiczne.jsonld::lang.enumerations.musicAlbumProductionType.mixtapeAlbum',
+            'https://schema.org/RemixAlbum' => 'magiczne.jsonld::lang.enumerations.musicAlbumProductionType.remixAlbum',
+            'https://schema.org/SoundtrackAlbum' => 'magiczne.jsonld::lang.enumerations.musicAlbumProductionType.soundtrackAlbum',
+            'https://schema.org/SpokenWordAlbum' => 'magiczne.jsonld::lang.enumerations.musicAlbumProductionType.spokenWordAlbum',
+            'https://schema.org/StudioAlbum' => 'magiczne.jsonld::lang.enumerations.musicAlbumProductionType.studioAlbum',
+            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+        ]
+    ];
+
+    /**
      * https://schema.org/OfferItemCondition
      */
     public static $offerItemCondition = [
