@@ -89,6 +89,7 @@
       - [QuantitativeValueDistribution](https://schema.org/QuantitativeValueDistribution)
         - [MonetaryAmountDistribution](https://schema.org/MonetaryAmountDistribution)
   - [MedicalEntity](https://schema.org/MedicalEntity)
+    - [MedicalCondition](https://schema.org/MedicalCondition)
     - [MedicalGuideline](https://schema.org/MedicalGuideline)
     - **_[MedicalIntangible](https://schema.org/MedicalIntangible)_**
       - [DrugLegalStatus](https://schema.org/DrugLegalStatus)

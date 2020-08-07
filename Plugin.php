@@ -52,6 +52,7 @@ use Magiczne\JsonLd\Components\Level3\MediaObject\{
     VideoObject
 };
 use Magiczne\JsonLd\Components\Level2\Event\PublicationEvent;
+use Magiczne\JsonLd\Components\Level2\MedicalEntity\MedicalCondition;
 use Magiczne\JsonLd\Components\Level2\MedicalEntity\MedicalGuideline;
 use Magiczne\JsonLd\Components\Level2\MedicalEntity\MedicalStudy;
 use Magiczne\JsonLd\Components\Level2\Organization\PerformingGroup;
@@ -166,6 +167,7 @@ class Plugin extends PluginBase
             Offer::class => 'Offer',
 
             // Level 2 - MedicalEntity
+            MedicalCondition::class => 'MedicalCondition',
             MedicalGuideline::class => 'MedicalGuideline',
             MedicalStudy::class => 'MedicalStudy',
 
