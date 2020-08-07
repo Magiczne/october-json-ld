@@ -99,6 +99,24 @@ class Enumerations
     ];
 
     /**
+     * https://schema.org/MusicReleaseFormatType
+     */
+    public static $musicReleaseFormatType = [
+        'type' => 'dropdown',
+        'default' => 'enum::no-data',
+        'options' => [
+            'https://schema.org/CDFormat' => 'magiczne.jsonld::lang.enumerations.musicReleaseFormatType.cdFormat',
+            'https://schema.org/CassetteFormat' => 'magiczne.jsonld::lang.enumerations.musicReleaseFormatType.cassetteFormat',
+            'https://schema.org/DVDFormat' => 'magiczne.jsonld::lang.enumerations.musicReleaseFormatType.dvdFormat',
+            'https://schema.org/DigitalAudioTapeFormat' => 'magiczne.jsonld::lang.enumerations.musicReleaseFormatType.digitalAudioTapeFormat',
+            'https://schema.org/DigitalFormat' => 'magiczne.jsonld::lang.enumerations.musicReleaseFormatType.digitalFormat',
+            'https://schema.org/LaserDiscFormat' => 'magiczne.jsonld::lang.enumerations.musicReleaseFormatType.laserDiscFormat',
+            'https://schema.org/VinylFormat' => 'magiczne.jsonld::lang.enumerations.musicReleaseFormatType.vinylFormat',
+            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+        ]
+    ];
+
+    /**
      * https://schema.org/OfferItemCondition
      */
     public static $offerItemCondition = [

@@ -124,6 +124,7 @@ Here are these enumerations:
     - [MedicineSystem](https://schema.org/MedicineSystem)
   - [MusicAlbumProductionType](https://schema.org/MusicAlbumProductionType)
   - [MusicAlbumReleaseType](https://schema.org/MusicAlbumReleaseType)
+  - [MusicReleaseFormatType](https://schema.org/MusicReleaseFormatType)
   - [OfferItemCondition](https://schema.org/OfferItemCondition)
   - **_[StatusEnumeration](https://schema.org/StatusEnumeration)_**
     - [ActionStatusType](https://schema.org/ActionStatusType)

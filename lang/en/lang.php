@@ -111,6 +111,15 @@ return [
             'ePRelease' => 'EP release',
             'singleRelease' => 'Single release'
         ],
+        'musicReleaseFormatType' => [
+            'cdFormat' => 'CD',
+            'cassetteFormat' => 'Casette',
+            'dvdFormat' => 'DVD',
+            'digitalAudioTapeFormat' => 'Digital audio tape',
+            'digitalFormat' => 'Digital',
+            'laserDiscFormat' => 'Laser disc',
+            'vinylFormat' => 'Vinyl'
+        ],
         'offerItemCondition' => [
             'damagedCondition' => 'Damaged',
             'newCondition' => 'New',
