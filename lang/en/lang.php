@@ -105,6 +105,12 @@ return [
             'spokenWordAlbum' => 'Spoken word album',
             'studioAlbum' => 'Studio album'
         ],
+        'musicAlbumReleaseType' => [
+            'albumRelease' => 'Album release',
+            'broadcastRelease' => 'Broadcast release',
+            'ePRelease' => 'EP release',
+            'singleRelease' => 'Single release'
+        ],
         'offerItemCondition' => [
             'damagedCondition' => 'Damaged',
             'newCondition' => 'New',

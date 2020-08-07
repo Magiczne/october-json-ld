@@ -84,6 +84,21 @@ class Enumerations
     ];
 
     /**
+     * https://schema.org/MusicAlbumReleaseType
+     */
+    public static $musicAlbumReleaseType = [
+        'type' => 'dropdown',
+        'default' => 'enum::no-data',
+        'options' => [
+            'https://schema.org/AlbumRelease' => 'magiczne.jsonld::lang.enumerations.musicAlbumReleaseType.albumRelease',
+            'https://schema.org/BroadcastRelease' => 'magiczne.jsonld::lang.enumerations.musicAlbumReleaseType.broadcastRelease',
+            'https://schema.org/EPRelease' => 'magiczne.jsonld::lang.enumerations.musicAlbumReleaseType.ePRelease',
+            'https://schema.org/SingleRelease' => 'magiczne.jsonld::lang.enumerations.musicAlbumReleaseType.singleRelease',
+            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+        ]
+    ];
+
+    /**
      * https://schema.org/OfferItemCondition
      */
     public static $offerItemCondition = [

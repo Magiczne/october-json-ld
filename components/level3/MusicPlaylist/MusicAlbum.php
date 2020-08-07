@@ -18,7 +18,7 @@ class MusicAlbum extends MusicPlaylist
         return array_merge(parent::defineProperties(), $this->generateProperties([
             'albumProductionType' => Enumerations::$musicAlbumProductionType,
             'albumRelease',
-            'albumReleaseType',
+            'albumReleaseType' => Enumerations::$musicAlbumReleaseType,
             'byArtist'
         ], 'MusicAlbum'));
     }
