@@ -24,6 +24,7 @@
       - [VideoObject](https://schema.org/VideoObject)
     - [MusicComposition](https://schema.org/MusicComposition)
     - [MusicPlaylist](https://schema.org/MusicPlaylist)
+      - [MusicAlbum](https://schema.org/MusicAlbum)
     - [MusicRecording](https://schema.org/MusicRecording)
     - [Photograph](https://schema.org/Photograph)
     - [Question](https://schema.org/Question)
