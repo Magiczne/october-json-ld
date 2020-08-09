@@ -99,6 +99,12 @@ use Magiczne\JsonLd\Components\Level3\WebPage\MedicalWebPage;
 use Magiczne\JsonLd\Components\Level3\WebPage\ProfilePage;
 use Magiczne\JsonLd\Components\Level3\WebPage\QAPage;
 use Magiczne\JsonLd\Components\Level3\WebPage\SearchResultsPage;
+use Magiczne\JsonLd\Components\Level3\WebPageElement\SiteNavigationElement;
+use Magiczne\JsonLd\Components\Level3\WebPageElement\Table;
+use Magiczne\JsonLd\Components\Level3\WebPageElement\WPAdBlock;
+use Magiczne\JsonLd\Components\Level3\WebPageElement\WPFooter;
+use Magiczne\JsonLd\Components\Level3\WebPageElement\WPHeader;
+use Magiczne\JsonLd\Components\Level3\WebPageElement\WPSideBar;
 use Magiczne\JsonLd\Components\Level4\ContactPoint\PostalAddress;
 use Magiczne\JsonLd\Components\Level4\ImageObject\Barcode;
 use Magiczne\JsonLd\Components\Level4\MedicalEnumeration\MedicalAudienceType;
@@ -257,6 +263,14 @@ class Plugin extends PluginBase
             ProfilePage::class => 'ProfilePage',
             QAPage::class => 'QAPage',
             SearchResultsPage::class => 'SearchResultsPage',
+
+            // Level 3 - WebPageElement
+            SiteNavigationElement::class => 'SiteNavigationElement',
+            Table::class => 'Table',
+            WPAdBlock::class => 'WPAdBlock',
+            WPFooter::class => 'WPFooter',
+            WPHeader::class => 'WPHeader',
+            WPSideBar::class => 'WPSideBar',
 
             // Level 4 - Contact Point
             PostalAddress::class => 'PostalAddress',

@@ -43,6 +43,12 @@
       - [QAPage](https://schema.org/QAPage)
       - [SearchResultsPage](https://schema.org/SearchResultsPage)
     - [WebPageElement](https://schema.org/WebPageElement)
+      - [SiteNavigationElement](https://schema.org/SiteNavigationElement)
+      - [Table](https://schema.org/Table)
+      - [WPAdBlock](https://schema.org/WPAdBlock)
+      - [WPFooter](https://schema.org/WPFooter)
+      - [WPHeader](https://schema.org/WPHeader)
+      - [WPSideBar](https://schema.org/WPSideBar)
   - [Event](https://schema.org/Event)
     - [PublicationEvent](https://schema.org/PublicationEvent)
   - **_[Intangible](https://schema.org/Intangible)_**
