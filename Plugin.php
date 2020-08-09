@@ -26,6 +26,7 @@ use Magiczne\JsonLd\Components\Level2\CreativeWork\{Clip,
     Question,
     Review,
     SoftwareApplication,
+    SoftwareSourceCode,
     WebPage,
     WebPageElement};
 use Magiczne\JsonLd\Components\Level2\Intangible\{AlignmentObject,
@@ -152,6 +153,7 @@ class Plugin extends PluginBase
             Question::class => 'Question',
             Review::class => 'Review',
             SoftwareApplication::class => 'SoftwareApplication',
+            SoftwareSourceCode::class => 'SoftwareSourceCode',
             WebPage::class => 'WebPage',
             WebPageElement::class => 'WebPageElement',
 

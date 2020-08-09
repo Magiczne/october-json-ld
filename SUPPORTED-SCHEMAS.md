@@ -31,6 +31,7 @@
     - [Question](https://schema.org/Question)
     - [Review](https://schema.org/Review)
     - [SoftwareApplication](https://schema.org/SoftwareApplication)
+    - [SoftwareSourceCode](https://schema.org/SoftwareSourceCode)
     - [WebPage](https://schema.org/WebPage)
       - [AboutPage](https://schema.org/AboutPage)
       - [CheckoutPage](https://schema.org/CheckoutPage)
