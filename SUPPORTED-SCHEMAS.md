@@ -60,6 +60,7 @@
     - [Brand](https://schema.org/Brand)
     - [BroadcastChannel](https://schema.org/BroadcastChannel)
     - [BroadcastFrequencySpecification](https://schema.org/BroadcastFrequencySpecification)
+    - [ComputerLanguage](https://schema.org/ComputerLanguage)
     - [DataFeedItem](https://schema.org/DataFeedItem)
     - [Demand](https://schema.org/Demand)
     - [EntryPoint](https://schema.org/EntryPoint)
