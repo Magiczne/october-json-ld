@@ -95,6 +95,7 @@
       - [GeoShape](https://schema.org/GeoShape)
       - [InteractionCounter](https://schema.org/InteractionCounter)
       - [MonetaryAmount](https://schema.org/MonetaryAmount)
+      - [NutritionInformation](https://schema.org/NutritionInformation)
       - [OpeningHoursSpecification](https://schema.org/OpeningHoursSpecification)
       - [OwnershipInfo](https://schema.org/OwnershipInfo)
       - [PriceSpecification](https://schema.org/PriceSpecification)
