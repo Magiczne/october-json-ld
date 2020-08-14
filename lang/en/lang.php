@@ -134,6 +134,19 @@ return [
             'leisureTimeActivity' => 'Leisure time activity',
             'occupationalActivity' => 'Occupational activity',
             'strengthTraining' => 'Strength training'
+        ],
+        'restrictedDiet' => [
+            'diabeticDiet' => 'Diabetic diet',
+            'glutenFreeDiet' => 'Gluten free diet',
+            'halalDiet' => 'Halal diet',
+            'hinduDiet' => 'Hindu diet',
+            'kosherDiet' => 'Kosher diet',
+            'lowCalorieDiet' => 'Low calorie diet',
+            'lowFatDiet' => 'Low fat diet',
+            'lowLactoseDiet' => 'Low lactose diet',
+            'lowSaltDiet' => 'Low salt diet',
+            'veganDiet' => 'Vegan diet',
+            'vegetarianDiet' => 'Vegetarian diet'
         ]
     ],
     'properties' => [

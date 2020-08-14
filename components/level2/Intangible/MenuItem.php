@@ -1,5 +1,6 @@
 <?php namespace Magiczne\JsonLd\Components\Level2\Intangible;
 
+use Magiczne\JsonLd\Classes\Enumerations\Enumerations;
 use Magiczne\JsonLd\Components\Level1\Intangible;
 
 class MenuItem extends Intangible
@@ -18,7 +19,7 @@ class MenuItem extends Intangible
             'menuAddOn',
             'nutrition',
             'offers',
-            'suitableForDiet'
+            'suitableForDiet' => Enumerations::$restrictedDiet
         ], 'MenuItem'));
     }
 }

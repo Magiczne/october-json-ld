@@ -138,6 +138,7 @@ Here are these enumerations:
   - [MusicAlbumReleaseType](https://schema.org/MusicAlbumReleaseType)
   - [MusicReleaseFormatType](https://schema.org/MusicReleaseFormatType)
   - [OfferItemCondition](https://schema.org/OfferItemCondition)
+  - [RestrictedDiet](https://schema.org/RestrictedDiet)
   - **_[StatusEnumeration](https://schema.org/StatusEnumeration)_**
     - [ActionStatusType](https://schema.org/ActionStatusType)
     - [EventStatusType](https://schema.org/EventStatusType)
