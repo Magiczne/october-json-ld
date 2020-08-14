@@ -351,6 +351,8 @@ return [
 
         'hasBroadcastChannel' => 'Has broadcast channel',
         'hasMap' => 'Has map',
+        'hasMenuItem' => 'Has menu item',
+        'hasMenuSection' => 'Has menu section',
         'hasOccupation' => 'Has occupation',
         'hasOfferCatalog' => 'Has offer catalog',
         'hasPart' => 'Has part',
