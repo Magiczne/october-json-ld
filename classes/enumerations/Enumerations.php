@@ -148,4 +148,26 @@ class Enumerations
             'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
         ]
     ];
+
+    /**
+     * https://schema.org/RestrictedDiet
+     */
+    public static $restrictedDiet = [
+        'type' => 'dropdown',
+        'default' => 'enum::no-data',
+        'options' => [
+            'https://schema.org/DiabeticDiet' => 'magiczne.jsonld::lang.enumerations.restrictedDiet.diabeticDiet',
+            'https://schema.org/GlutenFreeDiet' => 'magiczne.jsonld::lang.enumerations.restrictedDiet.glutenFreeDiet',
+            'https://schema.org/HalalDiet' => 'magiczne.jsonld::lang.enumerations.restrictedDiet.halalDiet',
+            'https://schema.org/HinduDiet' => 'magiczne.jsonld::lang.enumerations.restrictedDiet.hinduDiet',
+            'https://schema.org/KosherDiet' => 'magiczne.jsonld::lang.enumerations.restrictedDiet.kosherDiet',
+            'https://schema.org/LowCalorieDiet' => 'magiczne.jsonld::lang.enumerations.restrictedDiet.lowCalorieDiet',
+            'https://schema.org/LowFatDiet' => 'magiczne.jsonld::lang.enumerations.restrictedDiet.lowFatDiet',
+            'https://schema.org/LowLactoseDiet' => 'magiczne.jsonld::lang.enumerations.restrictedDiet.lowLactoseDiet',
+            'https://schema.org/LowSaltDiet' => 'magiczne.jsonld::lang.enumerations.restrictedDiet.lowSaltDiet',
+            'https://schema.org/VeganDiet' => 'magiczne.jsonld::lang.enumerations.restrictedDiet.veganDiet',
+            'https://schema.org/VegetarianDiet' => 'magiczne.jsonld::lang.enumerations.restrictedDiet.vegetarianDiet',
+            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+        ]
+    ];
 }
