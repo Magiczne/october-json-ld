@@ -77,6 +77,7 @@
       - [BreadcrumbList](https://schema.org/BreadcrumbList)
       - [OfferCatalog](https://schema.org/OfferCatalog)
     - [ListItem](https://schema.org/ListItem)
+    - [MenuItem](https://schema.org/MenuItem)
     - [Occupation](https://schema.org/Occupation)
     - [Offer](https://schema.org/Offer)
     - [ProgramMembership](https://schema.org/ProgramMembership)

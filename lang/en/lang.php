@@ -438,6 +438,7 @@ return [
         'membershipNumber' => 'Membership number',
         'memoryRequirements' => 'Memory requirements',
         'mentions' => 'Mentions',
+        'menuAddOn' => 'Menu add on',
         'minPrice' => 'Min price',
         'minValue' => 'Min value',
         'model' => 'Model',
@@ -458,6 +459,7 @@ return [
         'numberOfEmployees' => 'Number of employees',
         'numberOfEpisodes' => 'Number of episodes',
         'numberOfItems' => 'Number of items',
+        'nutrition' => 'Nutrition',
 
         'object' => 'Object',
         'occupationLocation' => 'Occupation location',
@@ -610,6 +612,7 @@ return [
         'suggestedGender' => 'Suggested gender',
         'suggestedMaxAge' => 'Suggested max age',
         'suggestedMinAge' => 'Suggested min age',
+        'suitableForDiet' => 'Suitable for diet',
         'superEvent' => 'Super event',
         'supportingData' => 'Supporting data',
 
