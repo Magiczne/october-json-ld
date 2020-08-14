@@ -12,3 +12,6 @@
     - Added few medical components.
 1.0.6:
     - Added music related components & web page elements
+1.0.7:
+    - Added Menu, MenuItem, MenuSection, NutritionInformation components
+    - Added RestrictedDiet enumeration
