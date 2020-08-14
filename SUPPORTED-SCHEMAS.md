@@ -23,6 +23,7 @@
       - [MusicVideoObject](https://schema.org/MusicVideoObject)
       - [VideoObject](https://schema.org/VideoObject)
     - [Menu](https://schema.org/Menu)
+    - [MenuSection](https://schema.org/MenuSection)
     - [MusicComposition](https://schema.org/MusicComposition)
     - [MusicPlaylist](https://schema.org/MusicPlaylist)
       - [MusicAlbum](https://schema.org/MusicAlbum)
