@@ -76,3 +76,49 @@ To do to you need to use following syntax:
     }
 </script>
 ```
+
+### Setting multiple values for property
+If you want to have multiple values for one of the properties just separate values using semicolon.
+Referencing multiple components with this syntax is also supported.
+
+#### Example 1
+Writing ```250ml of milk; 2 eggs; banana``` in one of the component parameters will results in the
+array of data being rendered into JSON like so
+
+```html
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Recipe",
+        "recipeIngredient": [
+            "250ml of milk",
+            "egg",
+            "banana"
+        ]
+    }
+</script>
+```
+
+#### Example 2
+Writing ```page:componentAlias1; layout:componentAlias2``` in one of the component parameters will result
+in the array of data being rendered into JSON like so
+
+```html
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Menu",
+        "hasMenuItem": [
+            {
+                "@type": "MenuItem",
+                "name": "First menu item"
+            },
+            {
+                "@type": "MenuItem",
+                "name": "Second menu item"
+            }
+        ]
+    }
+</script>
+```
+
