@@ -1,6 +1,7 @@
 <?php namespace Magiczne\JsonLd\Components\Level2\Intangible;
 
 use Exception;
+use Magiczne\JsonLd\Classes\Enumerations\Enumerations;
 use Magiczne\JsonLd\Components\Level1\Intangible;
 use October\Rain\Support\Arr;
 
@@ -21,8 +22,8 @@ class Enumeration extends Intangible
         }
 
         $value = $this->property('value');
-        
-        return $value === 'enum::no-data' ? null : $value;
+
+        return $value === Enumerations::ENUM_NO_DATA ? null : $value;
     }
 
     public function toJson()

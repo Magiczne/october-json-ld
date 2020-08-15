@@ -3,15 +3,20 @@
 class Enumerations
 {
     /**
+     * No data constant
+     */
+    const ENUM_NO_DATA = 'enum::no-data';
+
+    /**
      * https://schema.org/ContactPointOption
      */
     public static $contactPointOption = [
         'type' => 'dropdown',
-        'default' => 'enum::no-data',
+        'default' => self::ENUM_NO_DATA,
         'options' => [
             'https://schema.org/HearingImpairedSupported' => 'magiczne.jsonld::lang.enumerations.contactPointOption.hearingImpairedSupported',
             'https://schema.org/TollFree' => 'magiczne.jsonld::lang.enumerations.contactPointOption.tollFree',
-            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+            self::ENUM_NO_DATA => 'magiczne.jsonld::lang.global.noData'
         ]
     ];
 
@@ -20,7 +25,7 @@ class Enumerations
      */
     public static $dayOfWeek = [
         'type' => 'dropdown',
-        'default' => 'enum::no-data',
+        'default' => self::ENUM_NO_DATA,
         'options' => [
             'https://schema.org/Friday' => 'magiczne.jsonld::lang.enumerations.dayOfWeek.friday',
             'https://schema.org/Monday' => 'magiczne.jsonld::lang.enumerations.dayOfWeek.monday',
@@ -30,7 +35,7 @@ class Enumerations
             'https://schema.org/Thursday' => 'magiczne.jsonld::lang.enumerations.dayOfWeek.thursday',
             'https://schema.org/Tuesday' => 'magiczne.jsonld::lang.enumerations.dayOfWeek.tuesday',
             'https://schema.org/Wednesday' => 'magiczne.jsonld::lang.enumerations.dayOfWeek.wednesday',
-            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+            self::ENUM_NO_DATA => 'magiczne.jsonld::lang.global.noData'
         ]
     ];
 
@@ -39,12 +44,12 @@ class Enumerations
      */
     public static $itemListOrderType = [
         'type' => 'dropdown',
-        'default' => 'enum::no-data',
+        'default' => self::ENUM_NO_DATA,
         'options' => [
             'https://schema.org/ItemListOrderAscending' => 'magiczne.jsonld::lang.enumerations.itemListOrderType.itemListOrderAscending',
             'https://schema.org/ItemListOrderDescending' => 'magiczne.jsonld::lang.enumerations.itemListOrderType.itemListOrderDescending',
             'https://schema.org/ItemListUnordered' => 'magiczne.jsonld::lang.enumerations.itemListOrderType.itemListUnordered',
-            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+            self::ENUM_NO_DATA => 'magiczne.jsonld::lang.global.noData'
         ]
     ];
 
@@ -53,13 +58,13 @@ class Enumerations
      */
     public static $mapCategoryType = [
         'type' => 'dropdown',
-        'default' => 'enum::no-data',
+        'default' => self::ENUM_NO_DATA,
         'options' => [
             'https://schema.org/ParkingMap' => 'magiczne.jsonld::lang.enumerations.mapCategoryType.parkingMap',
             'https://schema.org/SeatingMap' => 'magiczne.jsonld::lang.enumerations.mapCategoryType.seatingMap',
             'https://schema.org/TransitMap' => 'magiczne.jsonld::lang.enumerations.mapCategoryType.transitMap',
             'https://schema.org/VenueMap' => 'magiczne.jsonld::lang.enumerations.mapCategoryType.venueMap',
-            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+            self::ENUM_NO_DATA => 'magiczne.jsonld::lang.global.noData'
         ]
     ];
 
@@ -68,7 +73,7 @@ class Enumerations
      */
     public static $musicAlbumProductionType = [
         'type' => 'dropdown',
-        'default' => 'enum::no-data',
+        'default' => self::ENUM_NO_DATA,
         'options' => [
             'https://schema.org/CompilationAlbum' => 'magiczne.jsonld::lang.enumerations.musicAlbumProductionType.compilationAlbum',
             'https://schema.org/DJMixAlbum' => 'magiczne.jsonld::lang.enumerations.musicAlbumProductionType.dJMixAlbum',
@@ -79,7 +84,7 @@ class Enumerations
             'https://schema.org/SoundtrackAlbum' => 'magiczne.jsonld::lang.enumerations.musicAlbumProductionType.soundtrackAlbum',
             'https://schema.org/SpokenWordAlbum' => 'magiczne.jsonld::lang.enumerations.musicAlbumProductionType.spokenWordAlbum',
             'https://schema.org/StudioAlbum' => 'magiczne.jsonld::lang.enumerations.musicAlbumProductionType.studioAlbum',
-            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+            self::ENUM_NO_DATA => 'magiczne.jsonld::lang.global.noData'
         ]
     ];
 
@@ -88,13 +93,13 @@ class Enumerations
      */
     public static $musicAlbumReleaseType = [
         'type' => 'dropdown',
-        'default' => 'enum::no-data',
+        'default' => self::ENUM_NO_DATA,
         'options' => [
             'https://schema.org/AlbumRelease' => 'magiczne.jsonld::lang.enumerations.musicAlbumReleaseType.albumRelease',
             'https://schema.org/BroadcastRelease' => 'magiczne.jsonld::lang.enumerations.musicAlbumReleaseType.broadcastRelease',
             'https://schema.org/EPRelease' => 'magiczne.jsonld::lang.enumerations.musicAlbumReleaseType.ePRelease',
             'https://schema.org/SingleRelease' => 'magiczne.jsonld::lang.enumerations.musicAlbumReleaseType.singleRelease',
-            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+            self::ENUM_NO_DATA => 'magiczne.jsonld::lang.global.noData'
         ]
     ];
 
@@ -103,7 +108,7 @@ class Enumerations
      */
     public static $musicReleaseFormatType = [
         'type' => 'dropdown',
-        'default' => 'enum::no-data',
+        'default' => self::ENUM_NO_DATA,
         'options' => [
             'https://schema.org/CDFormat' => 'magiczne.jsonld::lang.enumerations.musicReleaseFormatType.cdFormat',
             'https://schema.org/CassetteFormat' => 'magiczne.jsonld::lang.enumerations.musicReleaseFormatType.cassetteFormat',
@@ -112,7 +117,7 @@ class Enumerations
             'https://schema.org/DigitalFormat' => 'magiczne.jsonld::lang.enumerations.musicReleaseFormatType.digitalFormat',
             'https://schema.org/LaserDiscFormat' => 'magiczne.jsonld::lang.enumerations.musicReleaseFormatType.laserDiscFormat',
             'https://schema.org/VinylFormat' => 'magiczne.jsonld::lang.enumerations.musicReleaseFormatType.vinylFormat',
-            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+            self::ENUM_NO_DATA => 'magiczne.jsonld::lang.global.noData'
         ]
     ];
 
@@ -121,13 +126,13 @@ class Enumerations
      */
     public static $offerItemCondition = [
         'type' => 'dropdown',
-        'default' => 'enum::no-data',
+        'default' => self::ENUM_NO_DATA,
         'options' => [
             'https://schema.org/DamagedCondition' => 'magiczne.jsonld::lang.enumerations.offerItemCondition.damagedCondition',
             'https://schema.org/NewCondition' => 'magiczne.jsonld::lang.enumerations.offerItemCondition.newCondition',
             'https://schema.org/RefurbishedCondition' => 'magiczne.jsonld::lang.enumerations.offerItemCondition.refurbishedCondition',
             'https://schema.org/UsedCondition' => 'magiczne.jsonld::lang.enumerations.offerItemCondition.usedCondition',
-            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+            self::ENUM_NO_DATA => 'magiczne.jsonld::lang.global.noData'
         ]
     ];
 
@@ -136,7 +141,7 @@ class Enumerations
      */
     public static $physicalActivityCategory = [
         'type' => 'dropdown',
-        'default' => 'enum::no-data',
+        'default' => self::ENUM_NO_DATA,
         'options' => [
             'https://schema.org/AerobicActivity' => 'magiczne.jsonld::lang.enumerations.physicalActivityCategory.aerobicActivity',
             'https://schema.org/AnaerobicActivity' => 'magiczne.jsonld::lang.enumerations.physicalActivityCategory.anaerobicActivity',
@@ -145,7 +150,7 @@ class Enumerations
             'https://schema.org/LeisureTimeActivity' => 'magiczne.jsonld::lang.enumerations.physicalActivityCategory.leisureTimeActivity',
             'https://schema.org/OccupationalActivity' => 'magiczne.jsonld::lang.enumerations.physicalActivityCategory.occupationalActivity',
             'https://schema.org/StrengthTraining' => 'magiczne.jsonld::lang.enumerations.physicalActivityCategory.strengthTraining',
-            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+            self::ENUM_NO_DATA => 'magiczne.jsonld::lang.global.noData'
         ]
     ];
 
@@ -154,7 +159,7 @@ class Enumerations
      */
     public static $restrictedDiet = [
         'type' => 'dropdown',
-        'default' => 'enum::no-data',
+        'default' => self::ENUM_NO_DATA,
         'options' => [
             'https://schema.org/DiabeticDiet' => 'magiczne.jsonld::lang.enumerations.restrictedDiet.diabeticDiet',
             'https://schema.org/GlutenFreeDiet' => 'magiczne.jsonld::lang.enumerations.restrictedDiet.glutenFreeDiet',
@@ -167,7 +172,7 @@ class Enumerations
             'https://schema.org/LowSaltDiet' => 'magiczne.jsonld::lang.enumerations.restrictedDiet.lowSaltDiet',
             'https://schema.org/VeganDiet' => 'magiczne.jsonld::lang.enumerations.restrictedDiet.veganDiet',
             'https://schema.org/VegetarianDiet' => 'magiczne.jsonld::lang.enumerations.restrictedDiet.vegetarianDiet',
-            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+            self::ENUM_NO_DATA => 'magiczne.jsonld::lang.global.noData'
         ]
     ];
 }

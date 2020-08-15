@@ -7,11 +7,11 @@ class MedicalEnumerations
      */
     public static $medicalAudienceType = [
         'type' => 'dropdown',
-        'default' => 'enum::no-data',
+        'default' => Enumerations::ENUM_NO_DATA,
         'options' => [
             'https://schema.org/Clinician' => 'magiczne.jsonld::lang.enumerations.medicalAudienceType.clinician',
             'https://schema.org/MedicalResearcher' => 'magiczne.jsonld::lang.enumerations.medicalAudienceType.medicalResearcher',
-            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+            Enumerations::ENUM_NO_DATA => 'magiczne.jsonld::lang.global.noData'
         ]
     ];
 
@@ -20,12 +20,12 @@ class MedicalEnumerations
      */
     public static $medicalEvidenceLevel = [
         'type' => 'dropdown',
-        'default' => 'enum::no-data',
+        'default' => Enumerations::ENUM_NO_DATA,
         'options' => [
             'https://schema.org/EvidenceLevelA' => 'magiczne.jsonld::lang.enumerations.medicalEvidenceLevel.evidenceLevelA',
             'https://schema.org/EvidenceLevelB' => 'magiczne.jsonld::lang.enumerations.medicalEvidenceLevel.evidenceLevelB',
             'https://schema.org/EvidenceLevelC' => 'magiczne.jsonld::lang.enumerations.medicalEvidenceLevel.evidenceLevelC',
-            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+            Enumerations::ENUM_NO_DATA => 'magiczne.jsonld::lang.global.noData'
         ]
     ];
 
@@ -34,7 +34,7 @@ class MedicalEnumerations
      */
     public static $medicalStudyStatus = [
         'type' => 'dropdown',
-        'default' => 'enum::no-data',
+        'default' => Enumerations::ENUM_NO_DATA,
         'options' => [
             'https://schema.org/ActiveNotRecruiting' => 'magiczne.jsonld::lang.enumerations.medicalStudyStatus.activeNotRecruiting',
             'https://schema.org/Completed' => 'magiczne.jsonld::lang.enumerations.medicalStudyStatus.completed',
@@ -46,7 +46,7 @@ class MedicalEnumerations
             'https://schema.org/Suspended' => 'magiczne.jsonld::lang.enumerations.medicalStudyStatus.suspended',
             'https://schema.org/Terminated' => 'magiczne.jsonld::lang.enumerations.medicalStudyStatus.terminated',
             'https://schema.org/Withdrawn' => 'magiczne.jsonld::lang.enumerations.medicalStudyStatus.withdrawn',
-            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+            Enumerations::ENUM_NO_DATA => 'magiczne.jsonld::lang.global.noData'
         ]
     ];
 
@@ -55,7 +55,7 @@ class MedicalEnumerations
      */
     public static $medicineSystem = [
         'type' => 'dropdown',
-        'default' => 'enum::no-data',
+        'default' => Enumerations::ENUM_NO_DATA,
         'options' => [
             'https://schema.org/Ayurvedic' => 'magiczne.jsonld::lang.enumerations.medicineSystem.ayurvedic',
             'https://schema.org/Chiropractic' => 'magiczne.jsonld::lang.enumerations.medicineSystem.chiropractic',
@@ -63,7 +63,7 @@ class MedicalEnumerations
             'https://schema.org/Osteopathic' => 'magiczne.jsonld::lang.enumerations.medicineSystem.osteopathic',
             'https://schema.org/TraditionalChinese' => 'magiczne.jsonld::lang.enumerations.medicineSystem.traditionalChinese',
             'https://schema.org/WesternConventional' => 'magiczne.jsonld::lang.enumerations.medicineSystem.westernConventional',
-            'enum::no-data' => 'magiczne.jsonld::lang.global.noData'
+            Enumerations::ENUM_NO_DATA => 'magiczne.jsonld::lang.global.noData'
         ]
     ];
 }

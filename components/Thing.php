@@ -2,6 +2,8 @@
 
 use Cms\Classes\ComponentBase;
 use Exception;
+use Magiczne\JsonLd\Classes\CommonFields;
+use Magiczne\JsonLd\Classes\Enumerations\Enumerations;
 use Magiczne\JsonLd\Models\Settings;
 use October\Rain\Support\Arr;
 use October\Rain\Support\Str;
@@ -151,9 +153,7 @@ class Thing extends ComponentBase
         }
 
         // In other case just return property value
-        $emptyValues = [
-            'boolean::no-data', 'enum::no-data'
-        ];
+        $emptyValues = [ CommonFields::BOOLEAN_NO_DATA, Enumerations::ENUM_NO_DATA ];
 
         return in_array($value, $emptyValues, true) ? null : $value;
     }
