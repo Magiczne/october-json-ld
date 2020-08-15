@@ -13,6 +13,11 @@ class Thing extends ComponentBase
     // region Constants
 
     /**
+     * Separator used for assigning multiple components to one field
+     */
+    const COMPONENT_SEPARATOR = ';';
+
+    /**
      * Prefix used for referencing components on current layout
      */
     const LAYOUT_PREFIX = 'layout:';
@@ -60,7 +65,7 @@ class Thing extends ComponentBase
      * @return array
      * @throws Exception
      */
-    public function toArray()
+    public function toArray(): array
     {
         $properties = collect($this->defineProperties())->mapWithKeys(function ($item, $key) {
             return [
@@ -81,7 +86,7 @@ class Thing extends ComponentBase
      * @return string
      * @throws Exception
      */
-    public function toJson()
+    public function toJson(): string
     {
         $prettyPrint = Settings::get('pretty_print', false);
 
@@ -104,7 +109,7 @@ class Thing extends ComponentBase
      * @param string $group
      * @return array
      */
-    protected function generateProperties(array $properties, string $group)
+    protected function generateProperties(array $properties, string $group): array
     {
         return collect($properties)->mapWithKeys(function ($item, $key) use ($group) {
             if (is_array($item)) {
@@ -138,24 +143,47 @@ class Thing extends ComponentBase
      */
     protected function getValueOf(string $property)
     {
-        $value = $this->property($property);
+        $propertyValue = $this->property($property);
+        $computedValue = [];
 
-        // If property values starts with "page:" resolve the component staying behind that name
-        // in the current page components and return its array representation
-        if (Str::startsWith($value, self::PAGE_PREFIX)) {
-            return $this->getComponentDataFromPage(Str::substr($value, count(self::PAGE_PREFIX)));
+        foreach (explode(self::COMPONENT_SEPARATOR, $propertyValue) as $propertyValueItem) {
+            $trimmedValue = trim($propertyValueItem);
+
+            // If value starts with "page:" resolve the component staying behind that name
+            // in the current page components and get its array representation
+            if (Str::startsWith($trimmedValue, self::PAGE_PREFIX)) {
+                $componentName = Str::substr($trimmedValue, strlen(self::PAGE_PREFIX));
+                $computedValue[] = $this->getComponentDataFromPage($componentName);
+                continue;
+            }
+
+            // If value starts with "layout:" resolve the component staying behind that name
+            // in the current layout components and get its array representation
+            if (Str::startsWith($trimmedValue, self::LAYOUT_PREFIX)) {
+                $componentName = Str::substr($trimmedValue, strlen(self::LAYOUT_PREFIX));
+                $computedValue[] = $this->getComponentDataFromLayout($componentName);
+                continue;
+            }
+
+            // In other case just get property value but return null when value
+            // is equal to one of the "No data" constants
+            $emptyValues = [ CommonFields::BOOLEAN_NO_DATA, Enumerations::ENUM_NO_DATA ];
+            $computedValue[] = in_array($trimmedValue, $emptyValues, true) ? null : $trimmedValue;
         }
 
-        // If property starts with "layout:" resolve the component staying behind that name
-        // in the current layout components and return its array representation
-        if (Str::startsWith($value, self::LAYOUT_PREFIX)) {
-            return $this->getComponentDataFromLayout(Str::substr($value, count(self::LAYOUT_PREFIX)));
+        // If there are no elements in the array return null
+        // If there is only one element - return that element
+        // If there are multiple elements - return array with that elements
+        switch (count($computedValue)) {
+            case 0:
+                return null;
+
+            case 1:
+                return $computedValue[0];
+
+            default:
+                return $computedValue;
         }
-
-        // In other case just return property value
-        $emptyValues = [ CommonFields::BOOLEAN_NO_DATA, Enumerations::ENUM_NO_DATA ];
-
-        return in_array($value, $emptyValues, true) ? null : $value;
     }
 
     /**
