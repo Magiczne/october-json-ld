@@ -8,6 +8,22 @@ use October\Rain\Support\Str;
 
 class Thing extends ComponentBase
 {
+    // region Constants
+
+    /**
+     * Prefix used for referencing components on current layout
+     */
+    const LAYOUT_PREFIX = 'layout:';
+
+    /**
+     * Prefix used for referencing components on current page
+     */
+    const PAGE_PREFIX = 'page:';
+
+    // endregion
+
+    // region ComponentBase
+
     public function componentDetails()
     {
         return [
@@ -33,6 +49,8 @@ class Thing extends ComponentBase
             'url'
         ], 'Thing');
     }
+
+    // endregion
 
     /**
      * Return component data as an array.
@@ -122,40 +140,14 @@ class Thing extends ComponentBase
 
         // If property values starts with "page:" resolve the component staying behind that name
         // in the current page components and return its array representation
-        if (Str::startsWith($value, 'page:')) {
-            $componentName = Str::substr($value, 5);
-
-            if (Arr::has($this->page->page->components, $componentName)) {
-                $component = $this->page->page->components[$componentName];
-
-                if (!$component instanceof Thing) {
-                    throw new Exception('Component is not a valid JSON-LD component');
-                }
-
-                return $component->toArray();
-            }
-
-            $pageName = $this->page->page->title;
-            throw new Exception("Component with name '${componentName}' does not exists on current page ({$pageName})");
+        if (Str::startsWith($value, self::PAGE_PREFIX)) {
+            return $this->getComponentDataFromPage(Str::substr($value, count(self::PAGE_PREFIX)));
         }
 
         // If property starts with "layout:" resolve the component staying behind that name
         // in the current layout components and return its array representation
-        if (Str::startsWith($value, 'layout:')) {
-            $componentName = Str::substr($value, 7);
-
-            if (Arr::has($this->page->layout->components, $componentName)) {
-                $component = $this->page->layout->components[$componentName];
-
-                if (!$component instanceof Thing) {
-                    throw new Exception('Component is not a valid JSON-LD component');
-                }
-
-                return $component->toArray();
-            }
-
-            $layoutName = $this->page->layout->getFileName();
-            throw new Exception("Component with name '${componentName}' does not exists on current layout ({$layoutName})");
+        if (Str::startsWith($value, self::LAYOUT_PREFIX)) {
+            return $this->getComponentDataFromLayout(Str::substr($value, count(self::LAYOUT_PREFIX)));
         }
 
         // In other case just return property value
@@ -164,5 +156,51 @@ class Thing extends ComponentBase
         ];
 
         return in_array($value, $emptyValues, true) ? null : $value;
+    }
+
+    /**
+     * Get data from component located on the current layout
+     *
+     * @param string $componentName
+     * @return array
+     * @throws Exception
+     */
+    protected function getComponentDataFromLayout(string $componentName): array
+    {
+        if (!Arr::has($this->page->layout->components, $componentName)) {
+            $layoutName = $this->page->layout->getFileName();
+            throw new Exception("Component with name '${componentName}' does not exists on current layout ({$layoutName})");
+        }
+
+        $component = $this->page->layout->components[$componentName];
+
+        if (!$component instanceof Thing) {
+            throw new Exception('Component is not a valid JSON-LD component');
+        }
+
+        return $component->toArray();
+    }
+
+    /**
+     * Get data from component located on the same page
+     *
+     * @param string $componentName
+     * @return array
+     * @throws Exception
+     */
+    protected function getComponentDataFromPage(string $componentName): array
+    {
+        if (!Arr::has($this->page->page->components, $componentName)) {
+            $pageName = $this->page->page->title;
+            throw new Exception("Component with name '${componentName}' does not exists on current page ({$pageName})");
+        }
+
+        $component = $this->page->page->components[$componentName];
+
+        if (!$component instanceof Thing) {
+            throw new Exception('Component is not a valid JSON-LD component');
+        }
+
+        return $component->toArray();
     }
 }
