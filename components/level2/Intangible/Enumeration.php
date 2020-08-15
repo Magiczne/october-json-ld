@@ -26,7 +26,7 @@ class Enumeration extends Intangible
         return $value === Enumerations::ENUM_NO_DATA ? null : $value;
     }
 
-    public function toJson()
+    public function toJson(): string
     {
         throw new Exception("Enumerations cannot be displayed as a standalone JSON");
     }

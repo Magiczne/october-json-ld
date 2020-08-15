@@ -62,10 +62,10 @@ class Thing extends ComponentBase
     /**
      * Return component data as an array.
      *
-     * @return array
+     * @return array|string
      * @throws Exception
      */
-    public function toArray(): array
+    public function toArray()
     {
         $properties = collect($this->defineProperties())->mapWithKeys(function ($item, $key) {
             return [
