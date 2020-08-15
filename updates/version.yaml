@@ -15,3 +15,5 @@
 1.0.7:
     - Added Menu, MenuItem, MenuSection, NutritionInformation components
     - Added RestrictedDiet enumeration
+1.0.8:
+    - Added a way to pass multiple values to the component properties as well as referencing multiple components
