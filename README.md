@@ -69,7 +69,7 @@ To do to you need to use following syntax:
         "@type": "Thing",
         "description": "Example description",
         "image": {
-            "type": "ImageObject",
+            "@type": "ImageObject",
             "caption": "Image caption"
         },
         "name": "Example name"
