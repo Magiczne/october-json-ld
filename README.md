@@ -34,10 +34,13 @@ This plugin adds component for many of the https://schema.org schemas.
 ### Advanced usage
 > **IMPORTANT 1**: Currently there are no checks performed to ensure that circular dependencies are not happening.
 Have that in mind when referencing one component in another.
->
-> **IMPORTANT 2**: When you reference component which does not exist in the page or layout exception will be thrown.
 
-> **IMPORTANT 3**: When you reference component which is not a valid JSON-LD component exception will be thrown.
+> **IMPORTANT 2**: Currently there is no support for referencing multiple components in one field, but it is planned
+to do.
+
+> **IMPORTANT 3**: When you reference component which does not exist in the page or layout exception will be thrown.
+
+> **IMPORTANT 4**: When you reference component which is not a valid JSON-LD component exception will be thrown.
 
 This plugin supports referencing components inside other components if there are added to the same page or
 to the currently used layout.
