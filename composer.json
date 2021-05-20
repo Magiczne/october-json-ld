@@ -1,0 +1,13 @@
+{
+  "name": "magiczne/jsonld-plugin",
+  "version": "1.1.0",
+  "type": "october-plugin",
+  "description": "Use components to add JSON-LD data to your page.",
+  "homepage": "https://github.com/Magiczne/october-json-ld",
+  "keywords": ["october", "octobercms", "jsonld"],
+  "require": {
+    "php": "^7.1",
+    "composer/installers": "~1.0"
+  },
+  "minimum-stability": "dev"
+}
