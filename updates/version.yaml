@@ -21,3 +21,5 @@
     - Fixed plugin crash because of invalid method signatures
 1.1.0:
     - Added composer.json
+1.2.0:
+    - Allow PHP 8
